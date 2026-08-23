@@ -1,13 +1,26 @@
 <!-- 你的網站大廳：index.html -->
 <!DOCTYPE html>
 <html>
-<head><title>多益題庫大廳</title></head>
+<head>
+    <meta charset="UTF-8"> <!-- 建議加上編碼設定，避免中文亂碼 -->
+    <title>多益題庫大廳</title>
+    
+    <!-- 也可以加上這些 meta 標籤，告訴瀏覽器盡量不要快取這個大廳頁面 -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+</head>
 <body>
     <h1>多益題庫</h1>
+    
+    <!-- 加入獲取最新版本的按鈕 -->
+    <button onclick="refreshToLatest()" style="padding: 5px 10px; margin-bottom: 15px; cursor: pointer;">
+        🔄 獲取最新版本
+    </button>
+
     <ul>
-        
         <li><a href="TOEIC1150001test.html">範例題(請勿作答) </a></li>
-        <li><a href="TOEIC1150001.html">TOEIC1150001  </a></li>
+        <li><a href="TOEIC1150001.html(0823)">TOEIC1150001(0823)  </a></li>
         <li><a href="0000.html">0000 練習題 </a></li>
         <li><a href="0000.html">0000 練習題 </a></li>
         <li><a href="0000.html">0000 練習題 </a></li>
@@ -15,11 +28,19 @@
         <li><a href="0000.html">0000 練習題 </a></li>
         <li><a href="0812-7.html">0812-7 練習題 </a></li>
         
-        
-        
         <!-- 未來有新考卷，就加連結在這裡 -->
-        
     </ul>
     
+    <!-- JavaScript 處理強制刷新 -->
+    <script>
+        function refreshToLatest() {
+            // 取得目前的網址，並去掉已有的參數（避免網址越來越長）
+            const currentUrl = window.location.href.split('?')[0]; 
+            // 加上當下的時間戳記（毫秒），例如：?v=1697854321000
+            const newUrl = currentUrl + '?v=' + new Date().getTime();
+            // 導向新網址，強制抓取最新畫面
+            window.location.href = newUrl;
+        }
+    </script>
 </body>
 </html>
