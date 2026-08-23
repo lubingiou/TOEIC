@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日多益練習 - TOEIC1150001test2(0823)</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
+        .container { background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .user-info-box { margin-bottom: 20px; padding: 15px; background: #e8f4f8; border-radius: 5px; border-left: 4px solid #3498db; }
+        .user-info-box input { padding: 8px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px; margin-left: 10px; }
+        .reading-test-intro { background-color: #f4f6f7; border: 1px solid #ccd1d9; padding: 20px; margin-top: 20px; margin-bottom: 30px; border-radius: 5px; }
+        .reading-test-intro h2 { text-align: left; color: #2c3e50; margin-top: 0; font-size: 22px; letter-spacing: 1px; margin-bottom: 15px; }
+        .reading-test-intro p { font-size: 15px; color: #333; margin-bottom: 0; text-align: left; }
+        .part-title { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; margin-top: 30px; font-weight: bold; }
+        .directions { font-style: normal; color: #555; margin-top: 10px; margin-bottom: 20px; font-size: 15px; line-height: 1.5; }
+        .question-block { margin-bottom: 25px; }
+        .options label { display: block; margin: 8px 0; cursor: pointer; }
+        .reading-text { background-color: #f1f8ff; padding: 15px; border-left: 4px solid #3498db; margin-bottom: 15px; text-align: justify; }
+        .audio-box { background-color: #eef9f6; border-left: 4px solid #2ecc71; padding: 15px; margin: 20px 0; border-radius: 5px; }
+        .audio-box p { margin: 0 0 10px 0; font-weight: bold; color: #27ae60; font-size: 16px; }
+        audio { width: 100%; outline: none; }
+        button { background-color: #3498db; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer; display: block; width: 100%; margin-top: 20px; }
+        button:hover { background-color: #2980b9; }
+        .result { margin-top: 20px; font-weight: bold; font-size: 18px; text-align: center; color: #d35400; }
+        .correct-ans { color: green; font-weight: bold; display: none; margin-top: 5px; }
+        
+        .timer-box {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #fff3cd;
+            color: #856404;
+            border: 2px solid #ffeeba;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        @media (max-width: 768px) {
+            .timer-box {
+                top: 0; left: 0; right: 0;
+                border-radius: 0;
+                text-align: center;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="timer-box" id="timer-display">⏳ 剩餘時間：--:--</div>
+
+<div class="container">
+    <h1>每日多益練習 - TOEIC1150001test2(0823)</h1>
+    
+    <div class="user-info-box">
+        <label for="username"><strong>請輸入您的姓名：</strong></label>
+        <input type="text" id="username" placeholder="請填寫姓名" required>
+    </div>
+
+    <div class="reading-test-intro">
+        <h2>TOEIC TEST</h2>
+        <p>In the Reading and Listening test, you will read a variety of texts and answer several different types of comprehension questions. You must mark your answers carefully.</p>
+    </div>
+
+<h2 class="part-title">PART 5: Incomplete Sentences</h2>
+<div class="directions"><strong>Directions:</strong> A word or phrase is missing in each of the sentences below. Four answer choices are given below each sentence. Select the best answer to complete the sentence.</div>
+
+<div class="question-block" id="q101-block">
+    <p><strong>101.</strong> The new learning _______ introduced by the teacher makes English enjoyable for everyone.</p>
+     <div class="options">
+        <label><input type="radio" name="q101" value="A"> (A) technical</label>
+        <label><input type="radio" name="q101" value="B"> (B) technique</label>
+        <label><input type="radio" name="q101" value="C"> (C) technician</label>
+        <label><input type="radio" name="q101" value="D"> (D) technically</label>
+    </div>
+    <div class="correct-ans" id="ans-q101">正確答案：(B) technique。空格前為 learning (學習的)，應填名詞「方法/技巧」，technique 為名詞。</div>
+</div>
+
+<div class="question-block" id="q102-block">
+    <p><strong>102.</strong> The supervisor wants to speak with the employee _______ the new marketing project.</p>
+     <div class="options">
+        <label><input type="radio" name="q102" value="A"> (A) leads</label>
+        <label><input type="radio" name="q102" value="B"> (B) to lead</label>
+        <label><input type="radio" name="q102" value="C"> (C) leading</label>
+        <label><input type="radio" name="q102" value="D"> (D) is leading</label>
+    </div>
+    <div class="correct-ans" id="ans-q102">正確答案：(C) leading。由關係子句簡化而來的分詞片語：The employee (who is) leading... 主動帶領，故用現在分詞 leading。</div>
+</div>
+
+<div class="question-block" id="q103-block">
+    <p><strong>103.</strong> It's high time that our company _______ its strategy to attract more younger customers.</p>
+     <div class="options">
+        <label><input type="radio" name="q103" value="A"> (A) changes</label>
+        <label><input type="radio" name="q103" value="B"> (B) change</label>
+        <label><input type="radio" name="q103" value="C"> (C) changed</label>
+        <label><input type="radio" name="q103" value="D"> (D) will change</label>
+    </div>
+    <div class="correct-ans" id="ans-q103">正確答案：(C) changed。文法：It's (high) time that + S + V-ed (該是...的時候了)，故動詞用過去式 changed。</div>
+</div>
+
+<div class="question-block" id="q104-block">
+    <p><strong>104.</strong> There is no _______ that the talented basketball player will win the MVP award this year.</p>
+     <div class="options">
+        <label><input type="radio" name="q104" value="A"> (A) doubt</label>
+        <label><input type="radio" name="q104" value="B"> (B) reason</label>
+        <label><input type="radio" name="q104" value="C"> (C) matter</label>
+        <label><input type="radio" name="q104" value="D"> (D) problem</label>
+    </div>
+    <div class="correct-ans" id="ans-q104">正確答案：(A) doubt。片語 There is no doubt that... (毫無疑問...)。</div>
+</div>
+
+<div class="question-block" id="q105-block">
+    <p><strong>105.</strong> Some people find the instructions on the tax forms very _______ and difficult to understand.</p>
+     <div class="options">
+        <label><input type="radio" name="q105" value="A"> (A) confuse</label>
+        <label><input type="radio" name="q105" value="B"> (B) confused</label>
+        <label><input type="radio" name="q105" value="C"> (C) confusing</label>
+        <label><input type="radio" name="q105" value="D"> (D) confuses</label>
+    </div>
+    <div class="correct-ans" id="ans-q105">正確答案：(C) confusing。形容詞「令人困惑的」，用來形容事物(instructions)。</div>
+</div>
+
+<div class="question-block" id="q106-block">
+    <p><strong>106.</strong> In recognition of his lifetime _______ in sports, the coach was given a special award.</p>
+     <div class="options">
+        <label><input type="radio" name="q106" value="A"> (A) achieve</label>
+        <label><input type="radio" name="q106" value="B"> (B) achieving</label>
+        <label><input type="radio" name="q106" value="C"> (C) achievable</label>
+        <label><input type="radio" name="q106" value="D"> (D) achievements</label>
+    </div>
+    <div class="correct-ans" id="ans-q106">正確答案：(D) achievements。in recognition of his achievements (為了表揚他的成就)。</div>
+</div>
+
+<div class="question-block" id="q107-block">
+    <p><strong>107.</strong> The new smartphone _______ younger consumers who want high-quality cameras.</p>
+     <div class="options">
+        <label><input type="radio" name="q107" value="A"> (A) targets</label>
+        <label><input type="radio" name="q107" value="B"> (B) translates</label>
+        <label><input type="radio" name="q107" value="C"> (C) performs</label>
+        <label><input type="radio" name="q107" value="D"> (D) discards</label>
+    </div>
+    <div class="correct-ans" id="ans-q107">正確答案：(A) targets。動詞「以...為目標」。這款新手機以追求高品質相機的年輕消費者為目標。</div>
+</div>
+
+<div class="question-block" id="q108-block">
+    <p><strong>108.</strong> Because of the ongoing economic _______, many businesses have had to close down.</p>
+     <div class="options">
+        <label><input type="radio" name="q108" value="A"> (A) slump</label>
+        <label><input type="radio" name="q108" value="B"> (B) echo</label>
+        <label><input type="radio" name="q108" value="C"> (C) adolescent</label>
+        <label><input type="radio" name="q108" value="D"> (D) personality</label>
+    </div>
+    <div class="correct-ans" id="ans-q108">正確答案：(A) slump。經濟衰退/低迷 (economic slump)。</div>
+</div>
+
+<div class="question-block" id="q109-block">
+    <p><strong>109.</strong> The documentary is about a _______ who successfully turned a failing company into a global industry leader.</p>
+     <div class="options">
+        <label><input type="radio" name="q109" value="A"> (A) greenhouse</label>
+        <label><input type="radio" name="q109" value="B"> (B) politician</label>
+        <label><input type="radio" name="q109" value="C"> (C) salary</label>
+        <label><input type="radio" name="q109" value="D"> (D) native</label>
+    </div>
+    <div class="correct-ans" id="ans-q109">正確答案：(B) politician。選項中只有 politician (政治人物) 符合語意。</div>
+</div>
+
+<div class="question-block" id="q110-block">
+    <p><strong>110.</strong> Performing arts _______ help translate auditory information into sign language for deaf individuals.</p>
+     <div class="options">
+        <label><input type="radio" name="q110" value="A"> (A) interpreters</label>
+        <label><input type="radio" name="q110" value="B"> (B) interpretations</label>
+        <label><input type="radio" name="q110" value="C"> (C) interprets</label>
+        <label><input type="radio" name="q110" value="D"> (D) interpreted</label>
+    </div>
+    <div class="correct-ans" id="ans-q110">正確答案：(A) interpreters。performing arts interpreters (表演藝術口譯員)。</div>
+</div>
+
+<div class="question-block" id="q111-block">
+    <p><strong>111.</strong> _______ research of the performance is equally important for the interpreters to do a good job.</p>
+     <div class="options">
+        <label><input type="radio" name="q111" value="A"> (A) Prior</label>
+        <label><input type="radio" name="q111" value="B"> (B) Charming</label>
+        <label><input type="radio" name="q111" value="C"> (C) Deadly</label>
+        <label><input type="radio" name="q111" value="D"> (D) Supreme</label>
+    </div>
+    <div class="correct-ans" id="ans-q111">正確答案：(A) Prior。prior research (事前的研究)。</div>
+</div>
+
+<div class="question-block" id="q112-block">
+    <p><strong>112.</strong> The dog _______ under the manager's desk is very quiet and friendly.</p>
+     <div class="options">
+        <label><input type="radio" name="q112" value="A"> (A) sleep</label>
+        <label><input type="radio" name="q112" value="B"> (B) slept</label>
+        <label><input type="radio" name="q112" value="C"> (C) sleeping</label>
+        <label><input type="radio" name="q112" value="D"> (D) was sleeping</label>
+    </div>
+    <div class="correct-ans" id="ans-q112">正確答案：(C) sleeping。分詞片語修飾名詞：The dog (that is) sleeping...，簡化為 sleeping。</div>
+</div>
+
+<div class="question-block" id="q113-block">
+    <p><strong>113.</strong> The company is known _______ its exceptional customer service and high-quality products.</p>
+     <div class="options">
+        <label><input type="radio" name="q113" value="A"> (A) as</label>
+        <label><input type="radio" name="q113" value="B"> (B) for</label>
+        <label><input type="radio" name="q113" value="C"> (C) to</label>
+        <label><input type="radio" name="q113" value="D"> (D) with</label>
+    </div>
+    <div class="correct-ans" id="ans-q113">正確答案：(B) for。片語 be known for (以...聞名)。</div>
+</div>
+
+<div class="question-block" id="q114-block">
+    <p><strong>114.</strong> Our manager's strong sense of _______ makes the stressful workplace much more enjoyable.</p>
+     <div class="options">
+        <label><input type="radio" name="q114" value="A"> (A) humor</label>
+        <label><input type="radio" name="q114" value="B"> (B) funding</label>
+        <label><input type="radio" name="q114" value="C"> (C) cattle</label>
+        <label><input type="radio" name="q114" value="D"> (D) element</label>
+    </div>
+    <div class="correct-ans" id="ans-q114">正確答案：(A) humor。sense of humor (幽默感)。</div>
+</div>
+
+<div class="question-block" id="q115-block">
+    <p><strong>115.</strong> Getting a high salary is nice, but job satisfaction is also an important _______ to consider.</p>
+     <div class="options">
+        <label><input type="radio" name="q115" value="A"> (A) concert</label>
+        <label><input type="radio" name="q115" value="B"> (B) approach</label>
+        <label><input type="radio" name="q115" value="C"> (C) quality</label>
+        <label><input type="radio" name="q115" value="D"> (D) element</label>
+    </div>
+    <div class="correct-ans" id="ans-q115">正確答案：(D) element。element (元素/要素)，工作滿意度也是一個重要的考量要素。</div>
+</div>
+
+<h2 class="part-title">PART 6: Text Completion</h2>
+<div class="directions"><strong>Directions:</strong> Read the texts that follow. A word, phrase, or sentence is missing in parts of each text. Four answer choices for each question are given below the text. Select the best answer to complete the text.</div>
+
+<div class="reading-text">
+    <p><strong>Questions 116-119 refer to the following email.</strong></p>
+    <p>To: All Sales Staff</p>
+    <p>From: Regional Manager</p>
+    <p>Subject: New Sales Training</p>
+    <p>Dear Team,</p>
+    <p>It’s time that we (116)_______ our approach to selling our products. Starting next month, we will be introducing a new sales (117)_______ called "Shadowing." You will be paired with a senior salesperson, and you will observe how they interact with clients.</p>
+    <p>We believe this will be a (118)_______ but rewarding experience. You do more than just listen; you will learn how to respond to customer inquiries in real-time. I hope you will all find this new program (119)_______.</p>
+</div>
+
+<div class="question-block" id="q116-block">
+    <p><strong>116.</strong> </p>
+     <div class="options">
+        <label><input type="radio" name="q116" value="A"> (A) update</label>
+        <label><input type="radio" name="q116" value="B"> (B) updated</label>
+        <label><input type="radio" name="q116" value="C"> (C) updating</label>
+        <label><input type="radio" name="q116" value="D"> (D) to update</label>
+    </div>
+    <div class="correct-ans" id="ans-q116">正確答案：(B) updated。It's time that + S + V-ed 的句型，故選過去式 updated。</div>
+</div>
+
+<div class="question-block" id="q117-block">
+    <p><strong>117.</strong> </p>
+     <div class="options">
+        <label><input type="radio" name="q117" value="A"> (A) technique</label>
+        <label><input type="radio" name="q117" value="B"> (B) salary</label>
+        <label><input type="radio" name="q117" value="C"> (C) concert</label>
+        <label><input type="radio" name="q117" value="D"> (D) politician</label>
+    </div>
+    <div class="correct-ans" id="ans-q117">正確答案：(A) technique。sales technique (銷售技巧)。</div>
+</div>
+
+<div class="question-block" id="q118-block">
+    <p><strong>118.</strong> </p>
+     <div class="options">
+        <label><input type="radio" name="q118" value="A"> (A) challenge</label>
+        <label><input type="radio" name="q118" value="B"> (B) challenged</label>
+        <label><input type="radio" name="q118" value="C"> (C) challenging</label>
+        <label><input type="radio" name="q118" value="D"> (D) challenger</label>
+    </div>
+    <div class="correct-ans" id="ans-q118">正確答案：(C) challenging。形容詞「具挑戰性的」，修飾 experience。</div>
+</div>
+
+<div class="question-block" id="q119-block">
+    <p><strong>119.</strong> </p>
+     <div class="options">
+        <label><input type="radio" name="q119" value="A"> (A) enjoyable</label>
+        <label><input type="radio" name="q119" value="B"> (B) deadly</label>
+        <label><input type="radio" name="q119" value="C"> (C) wealthy</label>
+        <label><input type="radio" name="q119" value="D"> (D) adolescent</label>
+    </div>
+    <div class="correct-ans" id="ans-q119">正確答案：(A) enjoyable。形容詞「令人愉快的」。</div>
+</div>
+
+<div class="reading-text">
+    <p><strong>Questions 120-123 refer to the following article.</strong></p>
+    <p>Many European countries are trying to reduce the (120)_______ effect by introducing new environmental laws. Recently, one country introduced a "cattle tax." Farmers must pay a tax for the methane their cows produce.</p>
+    <p>While some (121)_______ argue this is necessary to protect the environment, many farmers are angry. They believe the government should (122)_______ big industries instead of small farms. The money from this tax goes (123)_______ environmental research.</p>
+</div>
+
+<div class="question-block" id="q120-block">
+    <p><strong>120.</strong> </p>
+     <div class="options">
+        <label><input type="radio" name="q120" value="A"> (A) greenhouse</label>
+        <label><input type="radio" name="q120" value="B"> (B) basketball</label>
+        <label><input type="radio" name="q120" value="C"> (C) native</label>
+        <label><input type="radio" name="q120" value="D"> (D) adolescent</label>
+    </div>
+    <div class="correct-ans" id="ans-q120">正確答案：(A) greenhouse。greenhouse effect (溫室效應)。</div>
+</div>
+
+<div class="question-block" id="q121-block">
+    <p><strong>121.</strong> </p>
+     <div class="options">
+        <label><input type="radio" name="q121" value="A"> (A) politicians</label>
+        <label><input type="radio" name="q121" value="B"> (B) elements</label>
+        <label><input type="radio" name="q121" value="C"> (C) personalities</label>
+        <label><input type="radio" name="q121" value="D"> (D) slumps</label>
+    </div>
+    <div class="correct-ans" id="ans-q121">正確答案：(A) politicians。政治人物 (politicians) 主張這是必要的。</div>
+</div>
+
+<div class="question-block" id="q122-block">
+    <p><strong>122.</strong> </p>
+     <div class="options">
+        <label><input type="radio" name="q122" value="A"> (A) target</label>
+        <label><input type="radio" name="q122" value="B"> (B) translate</label>
+        <label><input type="radio" name="q122" value="C"> (C) perform</label>
+        <label><input type="radio" name="q122" value="D"> (D) discard</label>
+    </div>
+    <div class="correct-ans" id="ans-q122">正確答案：(A) target。動詞「將...作為目標」。農民認為應該針對大企業。</div>
+</div>
+
+<div class="question-block" id="q123-block">
+    <p><strong>123.</strong> </p>
+     <div class="options">
+        <label><input type="radio" name="q123" value="A"> (A) toward</label>
+        <label><input type="radio" name="q123" value="B"> (B) off</label>
+        <label><input type="radio" name="q123" value="C"> (C) out</label>
+        <label><input type="radio" name="q123" value="D"> (D) up</label>
+    </div>
+    <div class="correct-ans" id="ans-q123">正確答案：(A) toward。go toward... (資金用於/幫助...)。</div>
+</div>
+
+<h2 class="part-title">PART 7: Reading Comprehension</h2>
+<div class="directions"><strong>Directions:</strong> In this part you will read a selection of texts, such as magazine and newspaper articles, e-mails, and instant messages. Each text or set of texts is followed by several questions. Select the best answer for each question.</div>
+
+<div class="reading-text">
+    <p><strong>Questions 124-125 refer to the following notice.</strong></p>
+    <p>Attention all students:</p>
+    <p>The language learning center is introducing a new "read along" practice session every Tuesday at 4 PM. This is designed for those who want to speak English like a native speaker. We will be using famous speeches and movie clips. Don't worry if it sounds confusing at first; just try your best to act like an echo and copy the sounds!</p>
+</div>
+
+<div class="question-block" id="q124-block">
+    <p><strong>124.</strong> What is the main purpose of the new sessions?</p>
+     <div class="options">
+        <label><input type="radio" name="q124" value="A"> (A) To watch famous movies.</label>
+        <label><input type="radio" name="q124" value="B"> (B) To improve English speaking skills.</label>
+        <label><input type="radio" name="q124" value="C"> (C) To learn how to write speeches.</label>
+        <label><input type="radio" name="q124" value="D"> (D) To meet native speakers in person.</label>
+    </div>
+    <div class="correct-ans" id="ans-q124">正確答案：(B) 文章提到 "designed for those who want to speak English like a native speaker" (為想把英文說得像母語人士的人設計)。</div>
+</div>
+
+<div class="question-block" id="q125-block">
+    <p><strong>125.</strong> What does the notice suggest students do if they feel confused?</p>
+     <div class="options">
+        <label><input type="radio" name="q125" value="A"> (A) Stop attending the sessions.</label>
+        <label><input type="radio" name="q125" value="B"> (B) Ask the teacher for a script.</label>
+        <label><input type="radio" name="q125" value="C"> (C) Just keep trying to copy the sounds.</label>
+        <label><input type="radio" name="q125" value="D"> (D) Bring a dictionary.</label>
+    </div>
+    <div class="correct-ans" id="ans-q125">正確答案：(C) 文章最後說 "Don't worry if it sounds confusing... just try your best to act like an echo and copy the sounds!"。</div>
+</div>
+
+<div class="reading-text">
+    <p><strong>Questions 126-127 refer to the following advertisement.</strong></p>
+    <p>Are you looking for a demanding but rewarding career? Join the Mamba Sports Academy as a youth basketball coach! We are looking for individuals with a strong dedication to sports and a positive mentality. You will help nurture young talent and turn them into great athletes. Prior coaching experience is a plus.</p>
+</div>
+
+<div class="question-block" id="q126-block">
+    <p><strong>126.</strong> What type of person is the academy looking for?</p>
+     <div class="options">
+        <label><input type="radio" name="q126" value="A"> (A) Someone looking for an easy job.</label>
+        <label><input type="radio" name="q126" value="B"> (B) Someone dedicated and positive.</label>
+        <label><input type="radio" name="q126" value="C"> (C) Someone who wants to be a professional player.</label>
+        <label><input type="radio" name="q126" value="D"> (D) Someone with a background in tax law.</label>
+    </div>
+    <div class="correct-ans" id="ans-q126">正確答案：(B) 廣告中提到 "looking for individuals with a strong dedication... and a positive mentality"。</div>
+</div>
+
+<div class="question-block" id="q127-block">
+    <p><strong>127.</strong> What is one of the responsibilities of the job?</p>
+     <div class="options">
+        <label><input type="radio" name="q127" value="A"> (A) Selling sports equipment.</label>
+        <label><input type="radio" name="q127" value="B"> (B) Developing young athletes.</label>
+        <label><input type="radio" name="q127" value="C"> (C) Building a new stadium.</label>
+        <label><input type="radio" name="q127" value="D"> (D) Managing the academy's budget.</label>
+    </div>
+    <div class="correct-ans" id="ans-q127">正確答案：(B) 文章說 "help nurture young talent and turn them into great athletes" (培育年輕人才)。</div>
+</div>
+
+<div class="reading-text">
+    <p><strong>Questions 128-129 refer to the following email.</strong></p>
+    <p>To: Theater Patrons</p>
+    <p>From: City Arts Center</p>
+    <p>Subject: Making Shows Accessible</p>
+    <p>We are pleased to announce that starting this fall, all major performances will feature performing arts interpreters. They will translate spoken words and music into sign language. We want to ensure that deaf and hard-of-hearing individuals can engage in theatrical activities without any barriers.</p>
+</div>
+
+<div class="question-block" id="q128-block">
+    <p><strong>128.</strong> What change is the City Arts Center announcing?</p>
+     <div class="options">
+        <label><input type="radio" name="q128" value="A"> (A) Lower ticket prices.</label>
+        <label><input type="radio" name="q128" value="B"> (B) New musical performances.</label>
+        <label><input type="radio" name="q128" value="C"> (C) The addition of sign language interpreters.</label>
+        <label><input type="radio" name="q128" value="D"> (D) A change in theater location.</label>
+    </div>
+    <div class="correct-ans" id="ans-q128">正確答案：(C) 信件主旨是 "performing arts interpreters... translate spoken words and music into sign language"。</div>
+</div>
+
+<div class="question-block" id="q129-block">
+    <p><strong>129.</strong> Who will benefit most from this change?</p>
+     <div class="options">
+        <label><input type="radio" name="q129" value="A"> (A) The actors on stage.</label>
+        <label><input type="radio" name="q129" value="B"> (B) Foreign tourists.</label>
+        <label><input type="radio" name="q129" value="C"> (C) Hard-of-hearing audience members.</label>
+        <label><input type="radio" name="q129" value="D"> (D) The theater's management team.</label>
+    </div>
+    <div class="correct-ans" id="ans-q129">正確答案：(C) 文章提到 "deaf and hard-of-hearing individuals can engage in theatrical activities"。</div>
+</div>
+
+<div class="reading-text">
+    <p><strong>Questions 130-132 refer to the following article.</strong></p>
+    <p>Not everyone enjoys paying taxes, but they are a necessary part of society. However, history is full of strange taxes. For example, in 1696, the UK introduced a "window tax" based on the number of windows a house had. Politicians figured that wealthy people owned larger houses with more windows. To avoid paying, many people simply blocked up their windows. The tax was finally scrapped in 1851.</p>
+</div>
+
+<div class="question-block" id="q130-block">
+    <p><strong>130.</strong> Why was the window tax introduced?</p>
+     <div class="options">
+        <label><input type="radio" name="q130" value="A"> (A) To encourage people to build smaller houses.</label>
+        <label><input type="radio" name="q130" value="B"> (B) To make wealthy people pay more taxes.</label>
+        <label><input type="radio" name="q130" value="C"> (C) To pay for a new war.</label>
+        <label><input type="radio" name="q130" value="D"> (D) To reduce the amount of glass used.</label>
+    </div>
+    <div class="correct-ans" id="ans-q130">正確答案：(B) 文章說 "The British government wanted to find a way to make rich people pay more taxes."。</div>
+</div>
+
+<div class="question-block" id="q131-block">
+    <p><strong>131.</strong> How did some people react to the window tax?</p>
+     <div class="options">
+        <label><input type="radio" name="q131" value="A"> (A) They moved to smaller houses.</label>
+        <label><input type="radio" name="q131" value="B"> (B) They protested in the streets.</label>
+        <label><input type="radio" name="q131" value="C"> (C) They blocked up their windows.</label>
+        <label><input type="radio" name="q131" value="D"> (D) They refused to pay the politicians.</label>
+    </div>
+    <div class="correct-ans" id="ans-q131">正確答案：(C) 文章提到 "many people simply blocked up their windows"。</div>
+</div>
+
+<div class="question-block" id="q132-block">
+    <p><strong>132.</strong> What does the word "scrapped" in the last line most likely mean?</p>
+     <div class="options">
+        <label><input type="radio" name="q132" value="A"> (A) Increased</label>
+        <label><input type="radio" name="q132" value="B"> (B) Ended</label>
+        <label><input type="radio" name="q132" value="C"> (C) Changed</label>
+        <label><input type="radio" name="q132" value="D"> (D) Promoted</label>
+    </div>
+    <div class="correct-ans" id="ans-q132">正確答案：(B) The tax was finally scrapped... (該稅法最終被廢除)，與 Ended 意思相近。</div>
+</div>
+
+<div class="reading-text">
+    <p><strong>Questions 133-136 refer to the following profile.</strong></p>
+    <p>Gregg Popovich is known as the NBA's most successful coach. He has coached the San Antonio Spurs since 1996 and won five championships. What is the key to his success? Aside from his clever management skills, he has a demanding coaching style. However, players respect him because he shows full support and has a sharp, dry sense of humor. He is excellent at spotting talent and nurturing it.</p>
+</div>
+
+<div class="question-block" id="q133-block">
+    <p><strong>133.</strong> How many championships has Gregg Popovich won?</p>
+     <div class="options">
+        <label><input type="radio" name="q133" value="A"> (A) Three</label>
+        <label><input type="radio" name="q133" value="B"> (B) Four</label>
+        <label><input type="radio" name="q133" value="C"> (C) Five</label>
+        <label><input type="radio" name="q133" value="D"> (D) Six</label>
+    </div>
+    <div class="correct-ans" id="ans-q133">正確答案：(C) 文章說 "He has coached... and won five NBA championships."。</div>
+</div>
+
+<div class="question-block" id="q134-block">
+    <p><strong>134.</strong> What is mentioned as a key to his success?</p>
+     <div class="options">
+        <label><input type="radio" name="q134" value="A"> (A) His background as a player.</label>
+        <label><input type="radio" name="q134" value="B"> (B) His clever management skills.</label>
+        <label><input type="radio" name="q134" value="C"> (C) His wealthy family.</label>
+        <label><input type="radio" name="q134" value="D"> (D) His relaxed coaching style.</label>
+    </div>
+    <div class="correct-ans" id="ans-q134">正確答案：(B) 文章提到 "Aside from his clever management skills..."。</div>
+</div>
+
+<div class="question-block" id="q135-block">
+    <p><strong>135.</strong> Why do players respect him despite his demanding style?</p>
+     <div class="options">
+        <label><input type="radio" name="q135" value="A"> (A) He pays them very well.</label>
+        <label><input type="radio" name="q135" value="B"> (B) He never yells at them.</label>
+        <label><input type="radio" name="q135" value="C"> (C) He supports them and has a good sense of humor.</label>
+        <label><input type="radio" name="q135" value="D"> (D) He gives them long vacations.</label>
+    </div>
+    <div class="correct-ans" id="ans-q135">正確答案：(C) 文章提到 "players respect him because he shows full support and has a sharp, dry sense of humor."。</div>
+</div>
+
+<div class="question-block" id="q136-block">
+    <p><strong>136.</strong> According to the article, what is Popovich excellent at doing?</p>
+     <div class="options">
+        <label><input type="radio" name="q136" value="A"> (A) Playing on the court.</label>
+        <label><input type="radio" name="q136" value="B"> (B) Spotting and nurturing talent.</label>
+        <label><input type="radio" name="q136" value="C"> (C) Giving motivational speeches to politicians.</label>
+        <label><input type="radio" name="q136" value="D"> (D) Designing basketball shoes.</label>
+    </div>
+    <div class="correct-ans" id="ans-q136">正確答案：(B) 文章最後一句 "He is excellent at spotting talent and nurturing it."。</div>
+</div>
+
+<div class="reading-text">
+    <p><strong>Questions 137-140 refer to the following biography extract.</strong></p>
+    <p>The world of basketball lost a supreme talent with the passing of Kobe Bryant in 2020. He was famous for his "Mamba Mentality," which encompassed great passion and dedication. Even during a career slump in 2003 and 2004, he used this mindset to push forward. The name was called to mind the image of a deadly black mamba snake—shedding its skin and discarding an old self to build a new one.</p>
+</div>
+
+<div class="question-block" id="q137-block">
+    <p><strong>137.</strong> What is Kobe Bryant's philosophy called?</p>
+     <div class="options">
+        <label><input type="radio" name="q137" value="A"> (A) Supreme Talent</label>
+        <label><input type="radio" name="q137" value="B"> (B) The Black Mamba</label>
+        <label><input type="radio" name="q137" value="C"> (C) Mamba Mentality</label>
+        <label><input type="radio" name="q137" value="D"> (D) The Basketball Mindset</label>
+    </div>
+    <div class="correct-ans" id="ans-q137">正確答案：(C) 文章提到 "famous for his 'Mamba Mentality'"。</div>
+</div>
+
+<div class="question-block" id="q138-block">
+    <p><strong>138.</strong> What does "Mamba Mentality" encompass?</p>
+     <div class="options">
+        <label><input type="radio" name="q138" value="A"> (A) Passion and dedication.</label>
+        <label><input type="radio" name="q138" value="B"> (B) Wealth and fame.</label>
+        <label><input type="radio" name="q138" value="C"> (C) Speed and height.</label>
+        <label><input type="radio" name="q138" value="D"> (D) Humor and cleverness.</label>
+    </div>
+    <div class="correct-ans" id="ans-q138">正確答案：(A) 文章說 "encompassed great passion and dedication"。</div>
+</div>
+
+<div class="question-block" id="q139-block">
+    <p><strong>139.</strong> What happened to Bryant in 2003 and 2004?</p>
+     <div class="options">
+        <label><input type="radio" name="q139" value="A"> (A) He retired from basketball.</label>
+        <label><input type="radio" name="q139" value="B"> (B) He experienced a career slump.</label>
+        <label><input type="radio" name="q139" value="C"> (C) He changed his team.</label>
+        <label><input type="radio" name="q139" value="D"> (D) He started an academy.</label>
+    </div>
+    <div class="correct-ans" id="ans-q139">正確答案：(B) 文章提到 "Even during a career slump in 2003 and 2004..."。</div>
+</div>
+
+<div class="question-block" id="q140-block">
+    <p><strong>140.</strong> What does the metaphor of the snake shedding its skin represent?</p>
+     <div class="options">
+        <label><input type="radio" name="q140" value="A"> (A) Becoming more aggressive.</label>
+        <label><input type="radio" name="q140" value="B"> (B) Discarding an old self to improve.</label>
+        <label><input type="radio" name="q140" value="C"> (C) Moving faster on the court.</label>
+        <label><input type="radio" name="q140" value="D"> (D) Hiding from opponents.</label>
+    </div>
+    <div class="correct-ans" id="ans-q140">正確答案：(B) 文章說 "shedding its skin and discarding an old self to build a new one."。</div>
+</div>
+
+<div class="reading-text">
+    <p><strong>Questions 141-145 refer to the following article on taxes.</strong></p>
+    <p>While we normally pay tax on our salaries, some countries have highly unusual targets. In Russia, Peter the Great introduced a "beard tax" in 1698 because he wanted his society to look more like Western Europe. Men with beards had to pay a tax, or else they had their beards forcibly shaved off.</p>
+    <p>In the US state of Maine, 99% of wild blueberries are grown there. Because they are proud of this charming industry, the local government introduced a blueberry tax. The funding from this tax goes toward research to help keep Maine's blueberry production the best in the world.</p>
+    <p>Additionally, the UK has a TV licence fee. The BBC receives about three-quarters of its funding from this fee, and anyone watching live broadcasts must pay it.</p>
+</div>
+
+<div class="question-block" id="q141-block">
+    <p><strong>141.</strong> Why did Peter the Great introduce a beard tax?</p>
+     <div class="options">
+        <label><input type="radio" name="q141" value="A"> (A) To make money for the army.</label>
+        <label><input type="radio" name="q141" value="B"> (B) To make Russians look more like Western Europeans.</label>
+        <label><input type="radio" name="q141" value="C"> (C) To punish his political enemies.</label>
+        <label><input type="radio" name="q141" value="D"> (D) To support the local barbers.</label>
+    </div>
+    <div class="correct-ans" id="ans-q141">正確答案：(B) 文章說 "he wanted his society to look more like Western Europe."。</div>
+</div>
+
+<div class="question-block" id="q142-block">
+    <p><strong>142.</strong> What happened if a Russian man refused to pay the beard tax?</p>
+     <div class="options">
+        <label><input type="radio" name="q142" value="A"> (A) He was sent to prison.</label>
+        <label><input type="radio" name="q142" value="B"> (B) His beard was forcibly shaved off.</label>
+        <label><input type="radio" name="q142" value="C"> (C) He had to leave the country.</label>
+        <label><input type="radio" name="q142" value="D"> (D) His house was taken away.</label>
+    </div>
+    <div class="correct-ans" id="ans-q142">正確答案：(B) 文章提到 "or else they had their beards forcibly shaved off."。</div>
+</div>
+
+<div class="question-block" id="q143-block">
+    <p><strong>143.</strong> Where does the money from the Maine blueberry tax go?</p>
+     <div class="options">
+        <label><input type="radio" name="q143" value="A"> (A) To build new roads in Maine.</label>
+        <label><input type="radio" name="q143" value="B"> (B) To pay local politicians.</label>
+        <label><input type="radio" name="q143" value="C"> (C) Toward blueberry research.</label>
+        <label><input type="radio" name="q143" value="D"> (D) To greenhouse development.</label>
+    </div>
+    <div class="correct-ans" id="ans-q143">正確答案：(C) 文章說 "The funding from this tax goes toward research..."。</div>
+</div>
+
+<div class="question-block" id="q144-block">
+    <p><strong>144.</strong> What does the BBC rely on for most of its funding?</p>
+     <div class="options">
+        <label><input type="radio" name="q144" value="A"> (A) The window tax</label>
+        <label><input type="radio" name="q144" value="B"> (B) The TV licence fee</label>
+        <label><input type="radio" name="q144" value="C"> (C) Government salaries</label>
+        <label><input type="radio" name="q144" value="D"> (D) Blueberry taxes</label>
+    </div>
+    <div class="correct-ans" id="ans-q144">正確答案：(B) 文章最後一段 "The BBC receives about three-quarters of its funding from this fee (TV licence fee)"。</div>
+</div>
+
+<div class="question-block" id="q145-block">
+    <p><strong>145.</strong> Which of the following is NOT mentioned as a taxed item in the article?</p>
+     <div class="options">
+        <label><input type="radio" name="q145" value="A"> (A) Beards</label>
+        <label><input type="radio" name="q145" value="B"> (B) Televisions</label>
+        <label><input type="radio" name="q145" value="C"> (C) Blueberries</label>
+        <label><input type="radio" name="q145" value="D"> (D) Cattle</label>
+    </div>
+    <div class="correct-ans" id="ans-q145">正確答案：(D) 文章提到了鬍子(Beards)、藍莓(Blueberries)、電視(Televisions/broadcasts)，但此篇(文章七)未提到牛(Cattle)。</div>
+</div>
+
+<div class="reading-text">
+    <p><strong>Questions 146-150 refer to the following feature article.</strong></p>
+    <p>When people attend concerts or musicals, they expect to be entertained. But for deaf and hard-of-hearing individuals, enjoying a theatrical performance can be challenging. This is where performing arts interpreters come in.</p>
+    <p>Their job is not just translating words; they must translate the emotion and auditory elements, like music rhythm, into sign language. Prior research is very important. Interpreters need to be familiar with the story and often attend practices to ensure their speed matches the performance.</p>
+    <p>For instance, when an important action takes place, the interpreter directs the audience's attention to the performer or the scene. All this hard work is done so that everyone can equally engage in theatrical activities.</p>
+</div>
+
+<div class="question-block" id="q146-block">
+    <p><strong>146.</strong> What is the main challenge mentioned in the first paragraph?</p>
+     <div class="options">
+        <label><input type="radio" name="q146" value="A"> (A) Concert tickets are too expensive.</label>
+        <label><input type="radio" name="q146" value="B"> (B) Theaters are often too crowded.</label>
+        <label><input type="radio" name="q146" value="C"> (C) Deaf individuals finding theatrical performances accessible.</label>
+        <label><input type="radio" name="q146" value="D"> (D) Finding good actors for musicals.</label>
+    </div>
+    <div class="correct-ans" id="ans-q146">正確答案：(C) 第一段提到對於聽障人士來說，享受戲劇表演可以是個挑戰。</div>
+</div>
+
+<div class="question-block" id="q147-block">
+    <p><strong>147.</strong> What must performing arts interpreters translate besides spoken words?</p>
+     <div class="options">
+        <label><input type="radio" name="q147" value="A"> (A) The script into foreign languages.</label>
+        <label><input type="radio" name="q147" value="B"> (B) Emotion and auditory elements like music rhythm.</label>
+        <label><input type="radio" name="q147" value="C"> (C) The lighting cues for the stage crew.</label>
+        <label><input type="radio" name="q147" value="D"> (D) The ticket information for the audience.</label>
+    </div>
+    <div class="correct-ans" id="ans-q147">正確答案：(B) 文章提到 "must translate the emotion and auditory elements, like music rhythm..."。</div>
+</div>
+
+<div class="question-block" id="q148-block">
+    <p><strong>148.</strong> Why is prior research important for the interpreters?</p>
+     <div class="options">
+        <label><input type="radio" name="q148" value="A"> (A) To know how much they will be paid.</label>
+        <label><input type="radio" name="q148" value="B"> (B) To become familiar with the story and characters.</label>
+        <label><input type="radio" name="q148" value="C"> (C) To learn how to sing the songs.</label>
+        <label><input type="radio" name="q148" value="D"> (D) To write a review of the show.</label>
+    </div>
+    <div class="correct-ans" id="ans-q148">正確答案：(B) 文章提到 "Interpreters need to be familiar with the story..."。</div>
+</div>
+
+<div class="question-block" id="q149-block">
+    <p><strong>149.</strong> What do interpreters do when an important action takes place?</p>
+     <div class="options">
+        <label><input type="radio" name="q149" value="A"> (A) They stop signing and watch the stage.</label>
+        <label><input type="radio" name="q149" value="B"> (B) They direct the audience's attention to the performer.</label>
+        <label><input type="radio" name="q149" value="C"> (C) They walk onto the stage.</label>
+        <label><input type="radio" name="q149" value="D"> (D) They dim the theater lights.</label>
+    </div>
+    <div class="correct-ans" id="ans-q149">正確答案：(B) 文章說 "the interpreter directs the audience's attention to the performer or the scene."。</div>
+</div>
+
+<div class="question-block" id="q150-block">
+    <p><strong>150.</strong> What is the ultimate goal of performing arts interpreters?</p>
+     <div class="options">
+        <label><input type="radio" name="q150" value="A"> (A) To become famous actors themselves.</label>
+        <label><input type="radio" name="q150" value="B"> (B) To make sure everyone can engage in theatrical activities.</label>
+        <label><input type="radio" name="q150" value="C"> (C) To teach sign language to the general public.</label>
+        <label><input type="radio" name="q150" value="D"> (D) To help the theater make more money.</label>
+    </div>
+    <div class="correct-ans" id="ans-q150">正確答案：(B) 文章最後說 "All this hard work is done so that everyone can equally engage in theatrical activities."。</div>
+</div>
+
+    <button onclick="checkAnswers()">送出並對答案</button>
+    <div id="score-display" class="result"></div>
+</div>
+
+<script>
+    // 🌟 新增：關閉瀏覽器預設的「重新整理後保留捲動位置」功能
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+
+    const correctAnswers = {
+        "q101": "B",
+        "q102": "C",
+        "q103": "C",
+        "q104": "A",
+        "q105": "C",
+        "q106": "D",
+        "q107": "A",
+        "q108": "A",
+        "q109": "B",
+        "q110": "A",
+        "q111": "A",
+        "q112": "C",
+        "q113": "B",
+        "q114": "A",
+        "q115": "D",
+        "q116": "B",
+        "q117": "A",
+        "q118": "C",
+        "q119": "A",
+        "q120": "A",
+        "q121": "A",
+        "q122": "A",
+        "q123": "A",
+        "q124": "B",
+        "q125": "C",
+        "q126": "B",
+        "q127": "B",
+        "q128": "C",
+        "q129": "C",
+        "q130": "B",
+        "q131": "C",
+        "q132": "B",
+        "q133": "C",
+        "q134": "B",
+        "q135": "C",
+        "q136": "B",
+        "q137": "C",
+        "q138": "A",
+        "q139": "B",
+        "q140": "B",
+        "q141": "B",
+        "q142": "B",
+        "q143": "C",
+        "q144": "B",
+        "q145": "D",
+        "q146": "C",
+        "q147": "B",
+        "q148": "B",
+        "q149": "B",
+        "q150": "B"
+    };
+
+    const EXAM_TIME_MINUTES = 50; // 預設 120 分鐘
+    let timeInSeconds = EXAM_TIME_MINUTES * 60; 
+    let timerInterval = null;
+
+    function startTimer() {
+        const timerDisplay = document.getElementById("timer-display");
+        
+        timerInterval = setInterval(() => {
+            if (timeInSeconds <= 0) {
+                clearInterval(timerInterval);
+                timerDisplay.innerText = "⏳ 時間到！";
+                timerDisplay.style.backgroundColor = "#f8d7da";
+                timerDisplay.style.color = "#721c24";
+                timerDisplay.style.borderColor = "#f5c6cb";
+                
+                let nameInput = document.getElementById("username");
+                let nameValue = nameInput.value.trim();
+                
+                if (!nameValue) {
+                    while (!nameValue) {
+                        let input = prompt("⏳ 測驗時間已到！\n請輸入您的姓名以完成交卷動作：");
+                        if (input) {
+                            nameValue = input.trim();
+                        }
+                    }
+                    nameInput.value = nameValue;
+                    alert("姓名輸入完成，將自動為您交卷！");
+                } else {
+                    alert("測驗時間已到！將自動為您交卷。");
+                }
+                
+                checkAnswers(true); // 時間到自動觸發交卷
+                return;
+            }
+            
+            let minutes = Math.floor(timeInSeconds / 60);
+            let seconds = timeInSeconds % 60;
+            
+            let minStr = minutes < 10 ? "0" + minutes : minutes;
+            let secStr = seconds < 10 ? "0" + seconds : seconds;
+            
+            timerDisplay.innerText = `⏳ 剩餘時間：${minStr}:${secStr}`;
+            timeInSeconds--;
+        }, 1000);
+    }
+
+    window.onload = function() {
+        // 🌟 新增：網頁載入時（包含重測刷新），確保停留在最上方
+        window.scrollTo(0, 0);
+
+        let savedData = localStorage.getItem("toeic_record_TOEIC1150001test2(0823)");
+        if (savedData) {
+            let userAnswers = JSON.parse(savedData);
+            document.getElementById("username").value = userAnswers.name;
+            document.getElementById("username").disabled = true;
+            
+            document.getElementById("timer-display").style.display = "none";
+            restoreAnswers(userAnswers);
+        } else {
+            startTimer();
+        }
+    };
+
+    function checkAnswers(autoSubmit = false) {
+        let nameValue = document.getElementById("username").value.trim();
+        
+        if (!nameValue && !autoSubmit) {
+            alert("請先輸入您的姓名再送出答案！");
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            return;
+        }
+
+        if (localStorage.getItem("toeic_record_TOEIC1150001test2(0823)")) {
+            alert("您已經完成過這份測驗囉！目前顯示的是您過去的作答紀錄。");
+            return;
+        }
+
+        clearInterval(timerInterval);
+        document.getElementById("timer-display").innerText = "🛑 測驗已結束";
+        document.getElementById("timer-display").style.backgroundColor = "#d4edda";
+        document.getElementById("timer-display").style.color = "#155724";
+
+        let score = 0;
+        let total = Object.keys(correctAnswers).length;
+
+        let userAnswers = {
+            name: nameValue, 
+            testName: "TOEIC1150001test2(0823)" 
+        };
+        
+        for (let q in correctAnswers) {
+            userAnswers[q] = "未作答";
+            let selected = document.querySelector('input[name="' + q + '"]:checked');
+            let ansDiv = document.getElementById("ans-" + q);
+            ansDiv.style.display = "block";
+
+            if (selected) {
+                userAnswers[q] = selected.value;
+                if (selected.value === correctAnswers[q]) {
+                    score++;
+                    ansDiv.style.color = "green";
+                } else {
+                    ansDiv.style.color = "red";
+                }
+            } else {
+                ansDiv.style.color = "red";
+            }
+            
+            let radios = document.querySelectorAll('input[name="' + q + '"]');
+            radios.forEach(r => r.disabled = true);
+        }
+        
+        userAnswers.score = score;
+        document.getElementById("score-display").innerText = `你的分數：${score} / ${total}（正在上傳後台...）`;
+
+        localStorage.setItem("toeic_record_TOEIC1150001test2(0823)", JSON.stringify(userAnswers));
+
+        const gasUrl = "https://script.google.com/macros/s/AKfycbykMQVcQAGTj2eQYsnx0acR_UKMIuCm4VQJIjm25ML_YXxuZqV-aNZ_-H6rXg6kVh7uSA/exec";
+
+        fetch(gasUrl, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "text/plain" },
+            body: JSON.stringify(userAnswers)
+        })
+        .then(() => {
+            document.getElementById("score-display").innerText = `你的分數：${score} / ${total}（作答紀錄已成功同步至後台！）`;
+            document.querySelector("button").style.display = "none";
+            // 🌟 已經將「交卷後自動回到最上方」的程式碼移除了
+        })
+        .catch(error => {
+            console.error("上傳失敗:", error);
+            document.getElementById("score-display").innerText = `你的分數：${score} / ${total}（紀錄上傳失敗，但已完成對答案）`;
+        });
+    }
+
+    function restoreAnswers(userAnswers) {
+        let score = 0;
+        let total = Object.keys(correctAnswers).length;
+
+        for (let q in correctAnswers) {
+            let userOpt = userAnswers[q];
+            let ansDiv = document.getElementById("ans-" + q);
+            ansDiv.style.display = "block";
+
+            let radios = document.querySelectorAll('input[name="' + q + '"]');
+            radios.forEach(r => {
+                r.disabled = true; 
+                if (r.value === userOpt) r.checked = true;
+            });
+
+            if (userOpt === correctAnswers[q]) {
+                score++;
+                ansDiv.style.color = "green";
+            } else {
+                ansDiv.style.color = "red";
+            }
+        }
+        document.getElementById("score-display").innerText = `歷史作答紀錄：${score} / ${total} 分`;
+        document.querySelector("button").style.display = "none";
+
+        let clearBtn = document.createElement("button");
+        clearBtn.innerText = "重新測驗 (清除本機紀錄)";
+        clearBtn.style.backgroundColor = "#e74c3c";
+        clearBtn.style.marginTop = "10px";
+        clearBtn.onclick = clearRecord;
+        document.getElementById("score-display").appendChild(clearBtn);
+    }
+
+    function clearRecord() {
+        if(confirm("確定要清除先前的作答紀錄，重新開始測驗嗎？（後台已儲存的舊成績不會消失）")) {
+            localStorage.removeItem("toeic_record_TOEIC1150001test2(0823)");
+            // 🌟 新增：重新載入前，將畫面移回頂部，搭配 scrollRestoration = 'manual' 確保重測時從頭開始
+            window.scrollTo(0, 0);
+            location.reload();
+        }
+    }
+</script>
+</body>
+</html>
