@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日多益練習 - 0901英聽</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
+        .container { background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .user-info-box { margin-bottom: 20px; padding: 15px; background: #e8f4f8; border-radius: 5px; border-left: 4px solid #3498db; }
+        .user-info-box input { padding: 8px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px; margin-left: 10px; }
+        .reading-test-intro { background-color: #f4f6f7; border: 1px solid #ccd1d9; padding: 20px; margin-top: 20px; margin-bottom: 30px; border-radius: 5px; }
+        .reading-test-intro h2 { text-align: left; color: #2c3e50; margin-top: 0; font-size: 22px; letter-spacing: 1px; margin-bottom: 15px; }
+        .reading-test-intro p { font-size: 15px; color: #333; margin-bottom: 0; text-align: left; }
+        .part-title { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; margin-top: 30px; font-weight: bold; }
+        .directions { font-style: normal; color: #555; margin-top: 10px; margin-bottom: 20px; font-size: 15px; line-height: 1.5; }
+        .question-block { margin-bottom: 25px; }
+        .options label { display: block; margin: 8px 0; cursor: pointer; }
+        .reading-text { background-color: #f1f8ff; padding: 15px; border-left: 4px solid #3498db; margin-bottom: 15px; text-align: justify; }
+        .audio-box { background-color: #eef9f6; border-left: 4px solid #2ecc71; padding: 15px; margin: 20px 0; border-radius: 5px; }
+        .audio-box p { margin: 0 0 10px 0; font-weight: bold; color: #27ae60; font-size: 16px; }
+        audio { width: 100%; outline: none; }
+        button { background-color: #3498db; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer; display: block; width: 100%; margin-top: 20px; }
+        button:hover { background-color: #2980b9; }
+        .result { margin-top: 20px; font-weight: bold; font-size: 18px; text-align: center; color: #d35400; }
+        .correct-ans { color: green; font-weight: bold; display: none; margin-top: 5px; }
+        
+        .timer-box {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #fff3cd;
+            color: #856404;
+            border: 2px solid #ffeeba;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        @media (max-width: 768px) {
+            .timer-box {
+                top: 0; left: 0; right: 0;
+                border-radius: 0;
+                text-align: center;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="timer-box" id="timer-display">⏳ 剩餘時間：--:--</div>
+
+<div class="container">
+    <h1>每日多益練習 - 0901英聽</h1>
+    
+    <div class="user-info-box">
+        <label for="username"><strong>請輸入您的姓名：</strong></label>
+        <input type="text" id="username" placeholder="請填寫姓名" required>
+    </div>
+
+    <div class="reading-test-intro">
+        <h2>TOEIC TEST</h2>
+        <p>In the Reading and Listening test, you will read a variety of texts and answer several different types of comprehension questions. You must mark your answers carefully.</p>
+    </div>
+
+<h2 class="part-title">PART 1: Photographs</h2>
+<div class="directions"><strong>Directions:</strong> For each question in this part, you will hear four statements about a picture in your test book. When you hear the statements, you must select the one statement that best describes what you see in the picture. Then find the number of the question on your answer sheet and mark your answer. The statements will not be printed in your test book and will be spoken only one time.</div>
+
+<div class="audio-box">
+    <p>🎧 聽力測驗音檔 (Listening Audio)</p>
+    <audio controls controlsList="nodownload">
+        <source src="0901英聽聽力檔.mp3" type="audio/mpeg">
+        您的瀏覽器不支援音訊播放。
+    </audio>
+</div>
+
+<div class="question-block" id="q1-block">
+    <p><strong>1.</strong> </p>
+    <img src="0901-1.jpg" alt="Question Image" style="max-width: 100%; height: auto; border-radius: 5px; margin-bottom: 15px;"> <div class="options">
+        <label><input type="radio" name="q1" value="A"> (A) </label>
+        <label><input type="radio" name="q1" value="B"> (B) </label>
+        <label><input type="radio" name="q1" value="C"> (C) </label>
+        <label><input type="radio" name="q1" value="D"> (D) </label>
+    </div>
+    <div class="correct-ans" id="ans-q1">正確答案：(B) A laptop is placed on the desk.</div>
+</div>
+
+<div class="question-block" id="q2-block">
+    <p><strong>2.</strong> </p>
+    <img src="0901-2.jpg" alt="Question Image" style="max-width: 100%; height: auto; border-radius: 5px; margin-bottom: 15px;"> <div class="options">
+        <label><input type="radio" name="q2" value="A"> (A) </label>
+        <label><input type="radio" name="q2" value="B"> (B) </label>
+        <label><input type="radio" name="q2" value="C"> (C) </label>
+        <label><input type="radio" name="q2" value="D"> (D) </label>
+    </div>
+    <div class="correct-ans" id="ans-q2">正確答案：(A) Passengers are boarding the airplane.</div>
+</div>
+
+<div class="question-block" id="q3-block">
+    <p><strong>3.</strong> </p>
+    <img src="0901-3.jpg" alt="Question Image" style="max-width: 100%; height: auto; border-radius: 5px; margin-bottom: 15px;"> <div class="options">
+        <label><input type="radio" name="q3" value="A"> (A) </label>
+        <label><input type="radio" name="q3" value="B"> (B) </label>
+        <label><input type="radio" name="q3" value="C"> (C) </label>
+        <label><input type="radio" name="q3" value="D"> (D) </label>
+    </div>
+    <div class="correct-ans" id="ans-q3">正確答案：(B) He is examining a shirt on a hanger.</div>
+</div>
+
+<h2 class="part-title">PART 2: Question-Response</h2>
+<div class="directions"><strong>Directions:</strong> You will hear a question or statement and three responses spoken in English. They will not be printed in your test book and will be spoken only one time. Select the best response to the question or statement and mark the letter (A), (B), or (C) on your answer sheet.</div>
+
+<div class="question-block" id="q4-block">
+    <p><strong>4.</strong> Did he apologize for the incident?</p>
+     <div class="options">
+        <label><input type="radio" name="q4" value="A"> (A) Yes, he expressed regret during the interview.</label>
+        <label><input type="radio" name="q4" value="B"> (B) I think he's an actor.</label>
+        <label><input type="radio" name="q4" value="C"> (C) The awards ceremony was last night.</label>
+    </div>
+    <div class="correct-ans" id="ans-q4">正確答案：(A) 題意詢問「他是否為該事件道歉？」選項 (A) 回答「是的，他在訪談中表達了懊悔。」最符合邏輯。根據文章，史密斯在訪談中對其行為表達了懊悔 (express regret)。</div>
+</div>
+
+<div class="question-block" id="q5-block">
+    <p><strong>5.</strong> When is the new movie going to be released?</p>
+     <div class="options">
+        <label><input type="radio" name="q5" value="A"> (A) About two hours.</label>
+        <label><input type="radio" name="q5" value="B"> (B) I haven't seen the schedule yet.</label>
+        <label><input type="radio" name="q5" value="C"> (C) It's a historical drama.</label>
+    </div>
+    <div class="correct-ans" id="ans-q5">正確答案：(B) 題意詢問「新電影何時上映？」為 When 問句。選項 (B)「我還沒看到時程表」是多益常見的自然回應方式。文章中提及的新電影為《自由路上》(Emancipation)。</div>
+</div>
+
+<div class="question-block" id="q6-block">
+    <p><strong>6.</strong> How do you usually eat these fish?</p>
+     <div class="options">
+        <label><input type="radio" name="q6" value="A"> (A) They are very vibrant.</label>
+        <label><input type="radio" name="q6" value="B"> (B) You should just use your hands.</label>
+        <label><input type="radio" name="q6" value="C"> (C) I went fishing last week.</label>
+    </div>
+    <div class="correct-ans" id="ans-q6">正確答案：(B) 題意詢問「你通常怎麼吃這些魚？」選項 (B) 回答「你應該直接用手」最符合邏輯。根據文章，吃沙丁魚的規矩 (etiquette) 是不用餐具 (without an implement) 而是用手拿。</div>
+</div>
+
+<div class="question-block" id="q7-block">
+    <p><strong>7.</strong> What time does the official parade start?</p>
+     <div class="options">
+        <label><input type="radio" name="q7" value="A"> (A) Right after the neighborhood parties.</label>
+        <label><input type="radio" name="q7" value="B"> (B) Yes, the costumes are beautiful.</label>
+        <label><input type="radio" name="q7" value="C"> (C) It's the biggest night of the year.</label>
+    </div>
+    <div class="correct-ans" id="ans-q7">正確答案：(A) 題意詢問「官方遊行幾點開始？」選項 (A) 回答「就在街坊派對結束之後」提供了時間點的資訊。文章提及在街坊派對後會進入主要活動——大眾遊行 (Marchas Populares)。</div>
+</div>
+
+<div class="question-block" id="q8-block">
+    <p><strong>8.</strong> Who were you talking to last night?</p>
+     <div class="options">
+        <label><input type="radio" name="q8" value="A"> (A) It bubbled up suddenly.</label>
+        <label><input type="radio" name="q8" value="B"> (B) My nine-year-old nephew.</label>
+        <label><input type="radio" name="q8" value="C"> (C) No, I didn't see him.</label>
+    </div>
+    <div class="correct-ans" id="ans-q8">正確答案：(B) 題意詢問「你昨晚在跟誰說話？」為 Who 問句。選項 (B) 回答「我九歲的外甥」直接回答了人物。文章中提到威爾·史密斯在奧斯卡當晚典禮後與他九歲的外甥 (nine-year-old nephew) 談話。</div>
+</div>
+
+<div class="question-block" id="q9-block">
+    <p><strong>9.</strong> Have you reached out to their representatives?</p>
+     <div class="options">
+        <label><input type="radio" name="q9" value="A"> (A) A faction of moviegoers.</label>
+        <label><input type="radio" name="q9" value="B"> (B) Yes, but they haven't responded.</label>
+        <label><input type="radio" name="q9" value="C"> (C) He reached for his phone.</label>
+    </div>
+    <div class="correct-ans" id="ans-q9">正確答案：(B) 題意詢問「你聯絡他們的代理人了嗎？」選項 (B) 回答「有，但他們還沒回覆。」完美契合。文章中提到 CNN 試圖聯繫克里斯·洛克的代理人 (representatives)，但對方未回應。</div>
+</div>
+
+<div class="question-block" id="q10-block">
+    <p><strong>10.</strong> Is this your first time visiting Lisbon?</p>
+     <div class="options">
+        <label><input type="radio" name="q10" value="A"> (A) No, I was here last June.</label>
+        <label><input type="radio" name="q10" value="B"> (B) The patron saint of lost things.</label>
+        <label><input type="radio" name="q10" value="C"> (C) I couldn't be happier.</label>
+    </div>
+    <div class="correct-ans" id="ans-q10">正確答案：(A) 題意詢問「這是你第一次拜訪里斯本嗎？」選項 (A) 回答「不，我去年六月來過」最為合理。六月剛好是里斯本聖安東尼節的舉辦月份。</div>
+</div>
+
+<div class="question-block" id="q11-block">
+    <p><strong>11.</strong> What are the groups being judged on?</p>
+     <div class="options">
+        <label><input type="radio" name="q11" value="A"> (A) A panel of experts.</label>
+        <label><input type="radio" name="q11" value="B"> (B) Mostly choreography and costumes.</label>
+        <label><input type="radio" name="q11" value="C"> (C) I think she looks very serious.</label>
+    </div>
+    <div class="correct-ans" id="ans-q11">正確答案：(B) 題意詢問「這些隊伍的評分標準是什麼？」選項 (B) 回答「主要是編舞和服裝」符合題意。根據文章，遊行的評分標準包含編舞 (choreography)、音樂和服裝 (costumes)。</div>
+</div>
+
+<div class="question-block" id="q12-block">
+    <p><strong>12.</strong> Why did he seem so upset during the interview?</p>
+     <div class="options">
+        <label><input type="radio" name="q12" value="A"> (A) It was a horrific night.</label>
+        <label><input type="radio" name="q12" value="B"> (B) He's had a lot of bottled-up emotions.</label>
+        <label><input type="radio" name="q12" value="C"> (C) He is opening up a new shop.</label>
+    </div>
+    <div class="correct-ans" id="ans-q12">正確答案：(B) 題意詢問「他為什麼在訪談中看起來這麼難過？」選項 (B) 回答「他積壓了許多情緒」最為合理。文章中提到史密斯有許多被壓抑的憤怒與情緒 (rage that had been bottled up)。</div>
+</div>
+
+<div class="question-block" id="q13-block">
+    <p><strong>13.</strong> Don't you think these decorations are a bit too much?</p>
+     <div class="options">
+        <label><input type="radio" name="q13" value="A"> (A) Throw in some sardines.</label>
+        <label><input type="radio" name="q13" value="B"> (B) They are quite expensive.</label>
+        <label><input type="radio" name="q13" value="C"> (C) That's the whole point of the festival!</label>
+    </div>
+    <div class="correct-ans" id="ans-q13">正確答案：(C) 題意為否定疑問句「你不覺得這些裝飾有點太浮誇了嗎？」選項 (C) 回答「這正是這個節慶的意義所在！」是自然的反駁與回應。這呼應了文章中提到的庸俗 (kitsch) 與裝模作樣 (camp) 的節慶特色。</div>
+</div>
+
+<div class="question-block" id="q14-block">
+    <p><strong>14.</strong> Do you think the fans will come back?</p>
+     <div class="options">
+        <label><input type="radio" name="q14" value="A"> (A) The majority of them probably will.</label>
+        <label><input type="radio" name="q14" value="B"> (B) He walked up to the stage.</label>
+        <label><input type="radio" name="q14" value="C"> (C) It takes a long time.</label>
+    </div>
+    <div class="correct-ans" id="ans-q14">正確答案：(A) 題意詢問「你覺得粉絲們會回來嗎？」選項 (A) 回答「大部分應該會」為正確回應。文章中主持人提到，他認為大部分的看電影的人 (majority of moviegoers) 和粉絲最終還是會回歸的。</div>
+</div>
+
+<div class="question-block" id="q15-block">
+    <p><strong>15.</strong> Should I take the head off first?</p>
+     <div class="options">
+        <label><input type="radio" name="q15" value="A"> (A) Yes, and then try to peel it.</label>
+        <label><input type="radio" name="q15" value="B"> (B) It's a guilty pleasure.</label>
+        <label><input type="radio" name="q15" value="C"> (C) He is the head of the department.</label>
+    </div>
+    <div class="correct-ans" id="ans-q15">正確答案：(A) 題意詢問「我應該先把它（魚）的頭拔掉嗎？」選項 (A) 回答「是的，然後試著剝皮」符合邏輯。這是文章中教導吃沙丁魚的步驟 (take their heads off first... try to peel it)。選項(C)為字詞 head 的混淆陷阱。</div>
+</div>
+
+<div class="question-block" id="q16-block">
+    <p><strong>16.</strong> How large is the team that produced the film?</p>
+     <div class="options">
+        <label><input type="radio" name="q16" value="A"> (A) Around fifty people, I believe.</label>
+        <label><input type="radio" name="q16" value="B"> (B) It's a true story from the 1860s.</label>
+        <label><input type="radio" name="q16" value="C"> (C) They are concerned about the release.</label>
+    </div>
+    <div class="correct-ans" id="ans-q16">正確答案：(A) 題意詢問「製作這部電影的團隊有多大？」為詢問數量/規模。選項 (A) 回答「我相信大約五十人」最符合邏輯。</div>
+</div>
+
+<div class="question-block" id="q17-block">
+    <p><strong>17.</strong> Who is the patron saint of this city?</p>
+     <div class="options">
+        <label><input type="radio" name="q17" value="A"> (A) It's replicated all over town.</label>
+        <label><input type="radio" name="q17" value="B"> (B) Saint Anthony.</label>
+        <label><input type="radio" name="q17" value="C"> (C) A very nice way of celebrating.</label>
+    </div>
+    <div class="correct-ans" id="ans-q17">正確答案：(B) 題意詢問「這座城市的守護聖人是誰？」為 Who 問句。選項 (B) 回答「聖安東尼 (Saint Anthony)」直接點出人物。</div>
+</div>
+
+<h2 class="part-title">PART 3: Conversations</h2>
+<div class="directions"><strong>Directions:</strong> You will hear some conversations between two or more people. You will be asked to answer three questions about what the speakers say in each conversation. Select the best response to each question and mark the letter (A), (B), (C), or (D) on your answer sheet. The conversations will not be printed in your test book and will be spoken only one time.</div>
+
+<div class="question-block" id="q18-block">
+    <p><strong>18.</strong> What is the main topic of the conversation?</p>
+     <div class="options">
+        <label><input type="radio" name="q18" value="A"> (A) An upcoming movie</label>
+        <label><input type="radio" name="q18" value="B"> (B) A recent television interview</label>
+        <label><input type="radio" name="q18" value="C"> (C) A music festival</label>
+        <label><input type="radio" name="q18" value="D"> (D) A sports competition</label>
+    </div>
+    <div class="correct-ans" id="ans-q18">正確答案：(B) 男子提到演員在深夜脫口秀 (late-night talk show) 敞開心胸談話，女子也提到這是事件後首次坦率的訪談 (candid interview)，故選 (B)。</div>
+</div>
+
+<div class="question-block" id="q19-block">
+    <p><strong>19.</strong> Where did the interview take place?</p>
+     <div class="options">
+        <label><input type="radio" name="q19" value="A"> (A) At an awards ceremony</label>
+        <label><input type="radio" name="q19" value="B"> (B) On a late-night talk show</label>
+        <label><input type="radio" name="q19" value="C"> (C) In a movie studio</label>
+        <label><input type="radio" name="q19" value="D"> (D) At a press conference</label>
+    </div>
+    <div class="correct-ans" id="ans-q19">正確答案：(B) 男子明確說出 "he finally opened up on a late-night talk show"（他終於在深夜脫口秀上敞開心胸）。</div>
+</div>
+
+<div class="question-block" id="q20-block">
+    <p><strong>20.</strong> What did the other party's representatives do?</p>
+     <div class="options">
+        <label><input type="radio" name="q20" value="A"> (A) They issued an apology.</label>
+        <label><input type="radio" name="q20" value="B"> (B) They declined to comment.</label>
+        <label><input type="radio" name="q20" value="C"> (C) They filed a lawsuit.</label>
+        <label><input type="radio" name="q20" value="D"> (D) They announced a new project.</label>
+    </div>
+    <div class="correct-ans" id="ans-q20">正確答案：(B) 男子說 "We reached out to their representatives, but they didn't respond."（我們聯絡了他們的代理人，但他們沒有回應），即拒絕或未發表評論 (declined to comment)。</div>
+</div>
+
+<div class="question-block" id="q21-block">
+    <p><strong>21.</strong> What are the speakers mainly discussing?</p>
+     <div class="options">
+        <label><input type="radio" name="q21" value="A"> (A) Concerns about a new movie's release</label>
+        <label><input type="radio" name="q21" value="B"> (B) The hiring of a new director</label>
+        <label><input type="radio" name="q21" value="C"> (C) The budget for a film project</label>
+        <label><input type="radio" name="q21" value="D"> (D) An award nomination</label>
+    </div>
+    <div class="correct-ans" id="ans-q21">正確答案：(A) 男子開頭提到男主角對新電影《自由路上》(Emancipation) 感到擔憂，後續討論其行為是否會影響電影，故選 (A)。</div>
+</div>
+
+<div class="question-block" id="q22-block">
+    <p><strong>22.</strong> What is the lead actor worried about?</p>
+     <div class="options">
+        <label><input type="radio" name="q22" value="A"> (A) The script is too complicated.</label>
+        <label><input type="radio" name="q22" value="B"> (B) His past actions might negatively affect the film.</label>
+        <label><input type="radio" name="q22" value="C"> (C) The shooting schedule is too tight.</label>
+        <label><input type="radio" name="q22" value="D"> (D) The costumes are not historically accurate.</label>
+    </div>
+    <div class="correct-ans" id="ans-q22">正確答案：(B) 女子提到他擔心自己之前的可怕決定會玷污 (taint) 團隊的心血並使電影蒙上陰影 (overshadow the film)，故選 (B)。</div>
+</div>
+
+<div class="question-block" id="q23-block">
+    <p><strong>23.</strong> What does the woman mention about moviegoers?</p>
+     <div class="options">
+        <label><input type="radio" name="q23" value="A"> (A) They prefer comedies over dramas.</label>
+        <label><input type="radio" name="q23" value="B"> (B) They will likely still support the film.</label>
+        <label><input type="radio" name="q23" value="C"> (C) They rarely watch historical movies.</label>
+        <label><input type="radio" name="q23" value="D"> (D) They have complained about the ticket prices.</label>
+    </div>
+    <div class="correct-ans" id="ans-q23">正確答案：(B) 女子提到大多數影評人相信 "the majority of moviegoers will still support the work"（大部分的觀影者還是會支持這部作品）。</div>
+</div>
+
+<div class="question-block" id="q24-block">
+    <p><strong>24.</strong> Where is the conversation most likely taking place?</p>
+     <div class="options">
+        <label><input type="radio" name="q24" value="A"> (A) In a restaurant</label>
+        <label><input type="radio" name="q24" value="B"> (B) At a fish market</label>
+        <label><input type="radio" name="q24" value="C"> (C) At a street festival in Lisbon</label>
+        <label><input type="radio" name="q24" value="D"> (D) In a museum</label>
+    </div>
+    <div class="correct-ans" id="ans-q24">正確答案：(C) 對話中提到里斯本的街道 (streets of Lisbon) 充滿活力，以及這是該城市的守護聖人節慶，因此是在里斯本的街頭慶典上。</div>
+</div>
+
+<div class="question-block" id="q25-block">
+    <p><strong>25.</strong> What is being celebrated?</p>
+     <div class="options">
+        <label><input type="radio" name="q25" value="A"> (A) A national holiday</label>
+        <label><input type="radio" name="q25" value="B"> (B) A city's patron saint</label>
+        <label><input type="radio" name="q25" value="C"> (C) A film premiere</label>
+        <label><input type="radio" name="q25" value="D"> (D) A sports victory</label>
+    </div>
+    <div class="correct-ans" id="ans-q25">正確答案：(B) 男子指出 "It's the Feast of St. Anthony, the patron saint of our city."（這是我們城市守護聖人聖安東尼的節日）。</div>
+</div>
+
+<div class="question-block" id="q26-block">
+    <p><strong>26.</strong> What does the man suggest the woman do?</p>
+     <div class="options">
+        <label><input type="radio" name="q26" value="A"> (A) Buy a souvenir</label>
+        <label><input type="radio" name="q26" value="B"> (B) Take a photograph</label>
+        <label><input type="radio" name="q26" value="C"> (C) Try a traditional local food</label>
+        <label><input type="radio" name="q26" value="D"> (D) Join a parade</label>
+    </div>
+    <div class="correct-ans" id="ans-q26">正確答案：(C) 男子跟女子解釋沙丁魚後，說 "You have to try one."（妳必須試試看），建議她品嚐當地傳統食物。</div>
+</div>
+
+<div class="question-block" id="q27-block">
+    <p><strong>27.</strong> What is the man trying to do?</p>
+     <div class="options">
+        <label><input type="radio" name="q27" value="A"> (A) Cook a meal</label>
+        <label><input type="radio" name="q27" value="B"> (B) Eat a sardine</label>
+        <label><input type="radio" name="q27" value="C"> (C) Clean a table</label>
+        <label><input type="radio" name="q27" value="D"> (D) Order from a menu</label>
+    </div>
+    <div class="correct-ans" id="ans-q27">正確答案：(B) 男子開頭說 "I got my sardine. Should I just use my fork to eat it?"（我拿到沙丁魚了，我該用叉子吃嗎？），顯示他正準備吃沙丁魚。</div>
+</div>
+
+<div class="question-block" id="q28-block">
+    <p><strong>28.</strong> What does the woman say about the proper etiquette?</p>
+     <div class="options">
+        <label><input type="radio" name="q28" value="A"> (A) Utensils should not be used.</label>
+        <label><input type="radio" name="q28" value="B"> (B) The food must be shared.</label>
+        <label><input type="radio" name="q28" value="C"> (C) It requires a special fork.</label>
+        <label><input type="radio" name="q28" value="D"> (D) The head should not be eaten.</label>
+    </div>
+    <div class="correct-ans" id="ans-q28">正確答案：(A) 女子回答 "The proper etiquette is to eat it without an implement. You just use your hands."（正確的禮儀是不用器具吃，直接用手），即不該使用餐具 (Utensils should not be used)。</div>
+</div>
+
+<div class="question-block" id="q29-block">
+    <p><strong>29.</strong> What will the woman most likely do next?</p>
+     <div class="options">
+        <label><input type="radio" name="q29" value="A"> (A) Ask for the check</label>
+        <label><input type="radio" name="q29" value="B"> (B) Demonstrate a technique</label>
+        <label><input type="radio" name="q29" value="C"> (C) Throw away the food</label>
+        <label><input type="radio" name="q29" value="D"> (D) Call a waiter</label>
+    </div>
+    <div class="correct-ans" id="ans-q29">正確答案：(B) 女子在解釋完步驟後說 "Here, let me show you."（來，我示範給你聽），因此接下來會示範技巧 (Demonstrate a technique)。</div>
+</div>
+
+<div class="question-block" id="q30-block">
+    <p><strong>30.</strong> What event are the speakers going to watch?</p>
+     <div class="options">
+        <label><input type="radio" name="q30" value="A"> (A) A fireworks display</label>
+        <label><input type="radio" name="q30" value="B"> (B) An official parade</label>
+        <label><input type="radio" name="q30" value="C"> (C) A theatrical play</label>
+        <label><input type="radio" name="q30" value="D"> (D) A music concert</label>
+    </div>
+    <div class="correct-ans" id="ans-q30">正確答案：(B) 男子問 "You mean the official parade?"（妳是說官方遊行嗎？），女子回答 "It does!" 並指出第一組人馬已經開始展演，故選 (B)。</div>
+</div>
+
+<div class="question-block" id="q31-block">
+    <p><strong>31.</strong> According to the man, how long does the event last?</p>
+     <div class="options">
+        <label><input type="radio" name="q31" value="A"> (A) A few minutes</label>
+        <label><input type="radio" name="q31" value="B"> (B) Half an hour</label>
+        <label><input type="radio" name="q31" value="C"> (C) Several hours</label>
+        <label><input type="radio" name="q31" value="D"> (D) An entire weekend</label>
+    </div>
+    <div class="correct-ans" id="ans-q31">正確答案：(C) 男子提到 "I heard it takes hours to finish."（我聽說要花好幾個小時才會結束），對應 Several hours。</div>
+</div>
+
+<div class="question-block" id="q32-block">
+    <p><strong>32.</strong> What are the judges evaluating?</p>
+     <div class="options">
+        <label><input type="radio" name="q32" value="A"> (A) The speed of the march</label>
+        <label><input type="radio" name="q32" value="B"> (B) Choreography and costumes</label>
+        <label><input type="radio" name="q32" value="C"> (C) The number of participants</label>
+        <label><input type="radio" name="q32" value="D"> (D) The quality of the food</label>
+    </div>
+    <div class="correct-ans" id="ans-q32">正確答案：(B) 女子提到評審會針對 "choreography, music, and traditional costumes"（編舞、音樂及傳統服飾）進行評分，故選 (B)。</div>
+</div>
+
+<div class="question-block" id="q33-block">
+    <p><strong>33.</strong> When did the referenced conversation take place?</p>
+     <div class="options">
+        <label><input type="radio" name="q33" value="A"> (A) Before a movie premiere</label>
+        <label><input type="radio" name="q33" value="B"> (B) During a television show</label>
+        <label><input type="radio" name="q33" value="C"> (C) The night after an awards ceremony</label>
+        <label><input type="radio" name="q33" value="D"> (D) Immediately following a parade</label>
+    </div>
+    <div class="correct-ans" id="ans-q33">正確答案：(C) 男子問道 "Did you see the segment where he talked about the night after the awards?"（你有看到他談論頒獎典禮後那晚的片段嗎？），故選 (C)。</div>
+</div>
+
+<div class="question-block" id="q34-block">
+    <p><strong>34.</strong> Who did the person talk to?</p>
+     <div class="options">
+        <label><input type="radio" name="q34" value="A"> (A) A news anchor</label>
+        <label><input type="radio" name="q34" value="B"> (B) A movie director</label>
+        <label><input type="radio" name="q34" value="C"> (C) His young nephew</label>
+        <label><input type="radio" name="q34" value="D"> (D) A festival judge</label>
+    </div>
+    <div class="correct-ans" id="ans-q34">正確答案：(C) 女子回答提到 "a conversation with his nine-year-old nephew"（與他九歲外甥的對話）。</div>
+</div>
+
+<div class="question-block" id="q35-block">
+    <p><strong>35.</strong> What was cited as a reason for the person's reaction?</p>
+     <div class="options">
+        <label><input type="radio" name="q35" value="A"> (A) A difficult family history</label>
+        <label><input type="radio" name="q35" value="B"> (B) A misunderstanding with a colleague</label>
+        <label><input type="radio" name="q35" value="C"> (C) Exhaustion from travel</label>
+        <label><input type="radio" name="q35" value="D"> (D) A poorly written script</label>
+    </div>
+    <div class="correct-ans" id="ans-q35">正確答案：(A) 男子說他解釋自己的反應很多是源自於突然湧現的 "painful family history"（痛苦的家庭歷史/過去），故選 (A)。</div>
+</div>
+
+<h2 class="part-title">PART 4: Talks</h2>
+<div class="directions"><strong>Directions:</strong> You will hear some talks given by a single speaker. You will be asked to answer three questions about what the speaker says in each talk. Select the best response to each question and mark the letter (A), (B), (C), or (D) on your answer sheet. The talks will not be printed in your test book and will be spoken only one time.</div>
+
+<div class="question-block" id="q36-block">
+    <p><strong>36.</strong> What is the purpose of the broadcast?</p>
+     <div class="options">
+        <label><input type="radio" name="q36" value="A"> (A) To review a new movie</label>
+        <label><input type="radio" name="q36" value="B"> (B) To report on an actor's recent television appearance</label>
+        <label><input type="radio" name="q36" value="C"> (C) To announce the winners of an awards ceremony</label>
+        <label><input type="radio" name="q36" value="D"> (D) To advertise a talk show</label>
+    </div>
+    <div class="correct-ans" id="ans-q36">正確答案：(B) 廣播開頭提到「一位知名演員在頒獎典禮事件後幾個月終於打破沉默...上了一個受歡迎的深夜脫口秀節目」，這是一則關於該演員近期電視露面的娛樂新聞報導。</div>
+</div>
+
+<div class="question-block" id="q37-block">
+    <p><strong>37.</strong> What does the actor blame for his behavior?</p>
+     <div class="options">
+        <label><input type="radio" name="q37" value="A"> (A) Intense public pressure</label>
+        <label><input type="radio" name="q37" value="B"> (B) Unresolved childhood trauma</label>
+        <label><input type="radio" name="q37" value="C"> (C) A dispute with a producer</label>
+        <label><input type="radio" name="q37" value="D"> (D) Lack of sleep</label>
+    </div>
+    <div class="correct-ans" id="ans-q37">正確答案：(B) 報導指出他將自己的爆發歸咎於「長期壓抑的情緒與目睹家暴的創傷童年 (a traumatic childhood where he witnessed domestic violence)」，對應未解決的童年創傷 (Unresolved childhood trauma)。</div>
+</div>
+
+<div class="question-block" id="q38-block">
+    <p><strong>38.</strong> What is the actor worried about?</p>
+     <div class="options">
+        <label><input type="radio" name="q38" value="A"> (A) Losing his fan base</label>
+        <label><input type="radio" name="q38" value="B"> (B) Facing a lawsuit</label>
+        <label><input type="radio" name="q38" value="C"> (C) His upcoming movie being negatively affected</label>
+        <label><input type="radio" name="q38" value="D"> (D) Being banned from future events</label>
+    </div>
+    <div class="correct-ans" id="ans-q38">正確答案：(C) 報導提到他深感懊悔，特別是擔心他的可怕決定會「讓即將上映的歷史電影幕後團隊的心血蒙上陰影 (overshadow the hard work...)」，即擔心電影受到負面影響。</div>
+</div>
+
+<div class="question-block" id="q39-block">
+    <p><strong>39.</strong> What type of event is being described?</p>
+     <div class="options">
+        <label><input type="radio" name="q39" value="A"> (A) A culinary competition</label>
+        <label><input type="radio" name="q39" value="B"> (B) A historical re-enactment</label>
+        <label><input type="radio" name="q39" value="C"> (C) A citywide festival</label>
+        <label><input type="radio" name="q39" value="D"> (D) A private neighborhood party</label>
+    </div>
+    <div class="correct-ans" id="ans-q39">正確答案：(C) 講者介紹了里斯本的聖安東尼節 (Feast of St. Anthony)，提到「整座城市變成了一個大型的街頭派對 (entire city transforms into a massive street party)」，因此這是一個全市性的節慶活動。</div>
+</div>
+
+<div class="question-block" id="q40-block">
+    <p><strong>40.</strong> When does this event take place?</p>
+     <div class="options">
+        <label><input type="radio" name="q40" value="A"> (A) In March</label>
+        <label><input type="radio" name="q40" value="B"> (B) In June</label>
+        <label><input type="radio" name="q40" value="C"> (C) In September</label>
+        <label><input type="radio" name="q40" value="D"> (D) In December</label>
+    </div>
+    <div class="correct-ans" id="ans-q40">正確答案：(B) 講者開頭即說 "If you're visiting Europe in June, you cannot miss..."（如果你在六月拜訪歐洲...），點出時間為六月。</div>
+</div>
+
+<div class="question-block" id="q41-block">
+    <p><strong>41.</strong> What food is highlighted as a local favorite?</p>
+     <div class="options">
+        <label><input type="radio" name="q41" value="A"> (A) Grilled chicken</label>
+        <label><input type="radio" name="q41" value="B"> (B) Fresh oysters</label>
+        <label><input type="radio" name="q41" value="C"> (C) Grilled sardines</label>
+        <label><input type="radio" name="q41" value="D"> (D) Sweet pastries</label>
+    </div>
+    <div class="correct-ans" id="ans-q41">正確答案：(C) 講者提到街坊空氣中瀰漫著「烤沙丁魚 (grilled sardines)」的味道，這也是當地人視為充滿罪惡感的享樂 (guilty pleasure) 食物。</div>
+</div>
+
+<div class="question-block" id="q42-block">
+    <p><strong>42.</strong> Where should the listeners go next?</p>
+     <div class="options">
+        <label><input type="radio" name="q42" value="A"> (A) To the main avenue</label>
+        <label><input type="radio" name="q42" value="B"> (B) To the neighborhood parks</label>
+        <label><input type="radio" name="q42" value="C"> (C) To a local restaurant</label>
+        <label><input type="radio" name="q42" value="D"> (D) To the train station</label>
+    </div>
+    <div class="correct-ans" id="ans-q42">正確答案：(A) 廣播中呼籲聽眾 "Please begin making your way to the main avenue"（請開始前往主要大道），因為官方遊行即將開始。</div>
+</div>
+
+<div class="question-block" id="q43-block">
+    <p><strong>43.</strong> What is the purpose of the upcoming event?</p>
+     <div class="options">
+        <label><input type="radio" name="q43" value="A"> (A) To raise money for charity</label>
+        <label><input type="radio" name="q43" value="B"> (B) To protest a new law</label>
+        <label><input type="radio" name="q43" value="C"> (C) To compete in a grand parade</label>
+        <label><input type="radio" name="q43" value="D"> (D) To clean up the streets</label>
+    </div>
+    <div class="correct-ans" id="ans-q43">正確答案：(C) 廣播提到官方的大眾遊行 (Marchas Populares) 即將開始，並提醒這是一場「有評分的競賽 (judged competition)」，因此目的是為了在盛大遊行中競爭。</div>
+</div>
+
+<div class="question-block" id="q44-block">
+    <p><strong>44.</strong> What will the judges be evaluating?</p>
+     <div class="options">
+        <label><input type="radio" name="q44" value="A"> (A) The floats and banners</label>
+        <label><input type="radio" name="q44" value="B"> (B) Costumes and dance routines</label>
+        <label><input type="radio" name="q44" value="C"> (C) The singing abilities of the crowd</label>
+        <label><input type="radio" name="q44" value="D"> (D) The historical accuracy of the march</label>
+    </div>
+    <div class="correct-ans" id="ans-q44">正確答案：(B) 廣播提到評審團將評估每組的 "choreography, musical performance, and traditional costumes"（編舞、音樂表現和傳統服飾），編舞 (choreography) 即對應 dance routines。</div>
+</div>
+
+<div class="question-block" id="q45-block">
+    <p><strong>45.</strong> What is the speaker mainly discussing?</p>
+     <div class="options">
+        <label><input type="radio" name="q45" value="A"> (A) A newly produced historical film</label>
+        <label><input type="radio" name="q45" value="B"> (B) A famous book</label>
+        <label><input type="radio" name="q45" value="C"> (C) A civil rights protest</label>
+        <label><input type="radio" name="q45" value="D"> (D) An actor's biography</label>
+    </div>
+    <div class="correct-ans" id="ans-q45">正確答案：(A) 講者（電影相關人士）正在討論他們的新電影《自由路上》(Emancipation)，並提到這是一部基於 1860 年代真實故事的歷史電影。</div>
+</div>
+
+<div class="question-block" id="q46-block">
+    <p><strong>46.</strong> What role did Gordon play in the story?</p>
+     <div class="options">
+        <label><input type="radio" name="q46" value="A"> (A) He was a general in the army.</label>
+        <label><input type="radio" name="q46" value="B"> (B) He was a politician.</label>
+        <label><input type="radio" name="q46" value="C"> (C) He was a man who escaped slavery.</label>
+        <label><input type="radio" name="q46" value="D"> (D) He was a famous writer.</label>
+    </div>
+    <div class="correct-ans" id="ans-q46">正確答案：(C) 講者提到電影跟隨名叫戈登 (Gordon) 的男子的腳步，描述他 "escapes slavery"（逃離奴隸制度）並加入聯邦軍的旅程。</div>
+</div>
+
+<div class="question-block" id="q47-block">
+    <p><strong>47.</strong> What does the speaker hope audiences will do?</p>
+     <div class="options">
+        <label><input type="radio" name="q47" value="A"> (A) Ignore the negative reviews.</label>
+        <label><input type="radio" name="q47" value="B"> (B) Focus on the historical importance of the story.</label>
+        <label><input type="radio" name="q47" value="C"> (C) Demand an apology from the actor.</label>
+        <label><input type="radio" name="q47" value="D"> (D) Boycott the movie.</label>
+    </div>
+    <div class="correct-ans" id="ans-q47">正確答案：(B) 講者最後提到，她相信大多數觀影者會「認知到這個歷史敘事的重要性 (recognize the importance of this historical narrative)」，並欣賞團隊的努力。</div>
+</div>
+
+<div class="question-block" id="q48-block">
+    <p><strong>48.</strong> What is the main topic of the podcast?</p>
+     <div class="options">
+        <label><input type="radio" name="q48" value="A"> (A) The history of Lisbon</label>
+        <label><input type="radio" name="q48" value="B"> (B) The social value of exaggerated cultural traditions</label>
+        <label><input type="radio" name="q48" value="C"> (C) The decline of neighborhood parties</label>
+        <label><input type="radio" name="q48" value="D"> (D) How to cook traditional meals</label>
+    </div>
+    <div class="correct-ans" id="ans-q48">正確答案：(B) Podcast 主持人探討為何某些文化傳統嚴重偏向庸俗 (kitsch) 或裝模作樣 (camp)，並解釋這些看似誇張的傳統實際上具有「重要的社會功能 (vital social function)」。</div>
+</div>
+
+<div class="question-block" id="q49-block">
+    <p><strong>49.</strong> What example does the speaker give of kitsch behavior?</p>
+     <div class="options">
+        <label><input type="radio" name="q49" value="A"> (A) Wearing fish-shaped hats</label>
+        <label><input type="radio" name="q49" value="B"> (B) Dancing in silence</label>
+        <label><input type="radio" name="q49" value="C"> (C) Reading poetry in public</label>
+        <label><input type="radio" name="q49" value="D"> (D) Painting street signs</label>
+    </div>
+    <div class="correct-ans" id="ans-q49">正確答案：(A) 主持人舉里斯本夏日節慶為例，提到人們會 "wearing hats shaped like sardines"（戴著像沙丁魚形狀的帽子），這被視為表面上看似荒謬的 kitsch 行為。</div>
+</div>
+
+<div class="question-block" id="q50-block">
+    <p><strong>50.</strong> According to the speaker, what benefit do these festivals provide?</p>
+     <div class="options">
+        <label><input type="radio" name="q50" value="A"> (A) They boost the local economy.</label>
+        <label><input type="radio" name="q50" value="B"> (B) They preserve ancient languages.</label>
+        <label><input type="radio" name="q50" value="C"> (C) They help people relieve stress and bond.</label>
+        <label><input type="radio" name="q50" value="D"> (D) They attract international celebrities.</label>
+    </div>
+    <div class="correct-ans" id="ans-q50">正確答案：(C) 主持人提到這些節慶讓大家 "shed their daily stress and connect with their neighbors"（卸下日常壓力並與鄰居連結），故選 (C)。</div>
+</div>
+
+    <button onclick="checkAnswers()">送出並對答案</button>
+    <div id="score-display" class="result"></div>
+</div>
+
+<script>
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+
+    const correctAnswers = {
+        "q1": "B",
+        "q2": "A",
+        "q3": "B",
+        "q4": "A",
+        "q5": "B",
+        "q6": "B",
+        "q7": "A",
+        "q8": "B",
+        "q9": "B",
+        "q10": "A",
+        "q11": "B",
+        "q12": "B",
+        "q13": "C",
+        "q14": "A",
+        "q15": "A",
+        "q16": "A",
+        "q17": "B",
+        "q18": "B",
+        "q19": "B",
+        "q20": "B",
+        "q21": "A",
+        "q22": "B",
+        "q23": "B",
+        "q24": "C",
+        "q25": "B",
+        "q26": "C",
+        "q27": "B",
+        "q28": "A",
+        "q29": "B",
+        "q30": "B",
+        "q31": "C",
+        "q32": "B",
+        "q33": "C",
+        "q34": "C",
+        "q35": "A",
+        "q36": "B",
+        "q37": "B",
+        "q38": "C",
+        "q39": "C",
+        "q40": "B",
+        "q41": "C",
+        "q42": "A",
+        "q43": "C",
+        "q44": "B",
+        "q45": "A",
+        "q46": "C",
+        "q47": "B",
+        "q48": "B",
+        "q49": "A",
+        "q50": "C"
+    };
+
+    const EXAM_TIME_MINUTES = 23; 
+    let timeInSeconds = EXAM_TIME_MINUTES * 60; 
+    let timerInterval = null;
+
+    function startTimer() {
+        const timerDisplay = document.getElementById("timer-display");
+        
+        timerInterval = setInterval(() => {
+            if (timeInSeconds <= 0) {
+                clearInterval(timerInterval);
+                timerDisplay.innerText = "⏳ 時間到！";
+                timerDisplay.style.backgroundColor = "#f8d7da";
+                timerDisplay.style.color = "#721c24";
+                timerDisplay.style.borderColor = "#f5c6cb";
+                
+                let nameInput = document.getElementById("username");
+                let nameValue = nameInput.value.trim();
+                
+                if (!nameValue) {
+                    while (!nameValue) {
+                        let input = prompt("⏳ 測驗時間已到！\n請輸入您的姓名以完成交卷動作：");
+                        if (input) {
+                            nameValue = input.trim();
+                        }
+                    }
+                    nameInput.value = nameValue;
+                    alert("姓名輸入完成，將自動為您交卷！");
+                } else {
+                    alert("測驗時間已到！將自動為您交卷。");
+                }
+                
+                checkAnswers(true); 
+                return;
+            }
+            
+            let minutes = Math.floor(timeInSeconds / 60);
+            let seconds = timeInSeconds % 60;
+            
+            let minStr = minutes < 10 ? "0" + minutes : minutes;
+            let secStr = seconds < 10 ? "0" + seconds : seconds;
+            
+            timerDisplay.innerText = `⏳ 剩餘時間：${minStr}:${secStr}`;
+            timeInSeconds--;
+        }, 1000);
+    }
+
+    window.onload = function() {
+        window.scrollTo(0, 0);
+
+        let savedData = localStorage.getItem("toeic_record_0901英聽");
+        if (savedData) {
+            let userAnswers = JSON.parse(savedData);
+            document.getElementById("username").value = userAnswers.name;
+            document.getElementById("username").disabled = true;
+            
+            document.getElementById("timer-display").style.display = "none";
+            restoreAnswers(userAnswers);
+        } else {
+            startTimer();
+        }
+    };
+
+    function checkAnswers(autoSubmit = false) {
+        let nameValue = document.getElementById("username").value.trim();
+        
+        if (!nameValue && !autoSubmit) {
+            alert("請先輸入您的姓名再送出答案！");
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            return;
+        }
+
+        if (localStorage.getItem("toeic_record_0901英聽")) {
+            alert("您已經完成過這份測驗囉！目前顯示的是您過去的作答紀錄。");
+            return;
+        }
+
+        clearInterval(timerInterval);
+        document.getElementById("timer-display").innerText = "🛑 測驗已結束";
+        document.getElementById("timer-display").style.backgroundColor = "#d4edda";
+        document.getElementById("timer-display").style.color = "#155724";
+
+        let score = 0;
+        let total = Object.keys(correctAnswers).length;
+
+        let userAnswers = {
+            name: nameValue, 
+            testName: "0901英聽" 
+        };
+        
+        for (let q in correctAnswers) {
+            userAnswers[q] = "未作答";
+            let selected = document.querySelector('input[name="' + q + '"]:checked');
+            let ansDiv = document.getElementById("ans-" + q);
+            ansDiv.style.display = "block";
+
+            let cleanCorrectAns = correctAnswers[q].replace(/[()]/g, '');
+
+            if (selected) {
+                userAnswers[q] = selected.value;
+                if (selected.value === cleanCorrectAns) {
+                    score++;
+                    ansDiv.style.color = "green";
+                } else {
+                    ansDiv.style.color = "red";
+                }
+            } else {
+                ansDiv.style.color = "red";
+            }
+            
+            let radios = document.querySelectorAll('input[name="' + q + '"]');
+            radios.forEach(r => r.disabled = true);
+        }
+        
+        userAnswers.score = score;
+        document.getElementById("score-display").innerText = `你的分數：${score} / ${total}（正在上傳後台...）`;
+
+        localStorage.setItem("toeic_record_0901英聽", JSON.stringify(userAnswers));
+
+        const gasUrl = "https://script.google.com/macros/s/AKfycbykMQVcQAGTj2eQYsnx0acR_UKMIuCm4VQJIjm25ML_YXxuZqV-aNZ_-H6rXg6kVh7uSA/exec";
+
+        fetch(gasUrl, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "text/plain" },
+            body: JSON.stringify(userAnswers)
+        })
+        .then(() => {
+            document.getElementById("score-display").innerText = `你的分數：${score} / ${total}（作答紀錄已成功同步至後台！）`;
+            document.querySelector("button").style.display = "none";
+        })
+        .catch(error => {
+            console.error("上傳失敗:", error);
+            document.getElementById("score-display").innerText = `你的分數：${score} / ${total}（紀錄上傳失敗，但已完成對答案）`;
+        });
+    }
+
+    function restoreAnswers(userAnswers) {
+        let score = 0;
+        let total = Object.keys(correctAnswers).length;
+
+        for (let q in correctAnswers) {
+            let userOpt = userAnswers[q];
+            let ansDiv = document.getElementById("ans-" + q);
+            ansDiv.style.display = "block";
+
+            let radios = document.querySelectorAll('input[name="' + q + '"]');
+            radios.forEach(r => {
+                r.disabled = true; 
+                if (r.value === userOpt) r.checked = true;
+            });
+
+            let cleanCorrectAns = correctAnswers[q].replace(/[()]/g, '');
+
+            if (userOpt === cleanCorrectAns) {
+                score++;
+                ansDiv.style.color = "green";
+            } else {
+                ansDiv.style.color = "red";
+            }
+        }
+        document.getElementById("score-display").innerText = `歷史作答紀錄：${score} / ${total} 分`;
+        document.querySelector("button").style.display = "none";
+
+        let clearBtn = document.createElement("button");
+        clearBtn.innerText = "重新測驗 (清除本機紀錄)";
+        clearBtn.style.backgroundColor = "#e74c3c";
+        clearBtn.style.marginTop = "10px";
+        clearBtn.onclick = clearRecord;
+        document.getElementById("score-display").appendChild(clearBtn);
+    }
+
+    function clearRecord() {
+        if(confirm("確定要清除先前的作答紀錄，重新開始測驗嗎？（後台已儲存的舊成績不會消失）")) {
+            localStorage.removeItem("toeic_record_0901英聽");
+            window.scrollTo(0, 0);
+            location.reload();
+        }
+    }
+</script>
+</body>
+</html>

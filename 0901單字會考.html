@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日多益練習 - 0901單字會考</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
+        .container { background-color: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .user-info-box { margin-bottom: 20px; padding: 15px; background: #e8f4f8; border-radius: 5px; border-left: 4px solid #3498db; }
+        .user-info-box input { padding: 8px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px; margin-left: 10px; }
+        .reading-test-intro { background-color: #f4f6f7; border: 1px solid #ccd1d9; padding: 20px; margin-top: 20px; margin-bottom: 30px; border-radius: 5px; }
+        .reading-test-intro h2 { text-align: left; color: #2c3e50; margin-top: 0; font-size: 22px; letter-spacing: 1px; margin-bottom: 15px; }
+        .reading-test-intro p { font-size: 15px; color: #333; margin-bottom: 0; text-align: left; }
+        .part-title { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 5px; margin-top: 30px; font-weight: bold; }
+        .directions { font-style: normal; color: #555; margin-top: 10px; margin-bottom: 20px; font-size: 15px; line-height: 1.5; }
+        .question-block { margin-bottom: 25px; }
+        .options label { display: block; margin: 8px 0; cursor: pointer; }
+        .reading-text { background-color: #f1f8ff; padding: 15px; border-left: 4px solid #3498db; margin-bottom: 15px; text-align: justify; }
+        .audio-box { background-color: #eef9f6; border-left: 4px solid #2ecc71; padding: 15px; margin: 20px 0; border-radius: 5px; }
+        .audio-box p { margin: 0 0 10px 0; font-weight: bold; color: #27ae60; font-size: 16px; }
+        audio { width: 100%; outline: none; }
+        button { background-color: #3498db; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer; display: block; width: 100%; margin-top: 20px; }
+        button:hover { background-color: #2980b9; }
+        .result { margin-top: 20px; font-weight: bold; font-size: 18px; text-align: center; color: #d35400; }
+        .correct-ans { color: green; font-weight: bold; display: none; margin-top: 5px; }
+        
+        .timer-box {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #fff3cd;
+            color: #856404;
+            border: 2px solid #ffeeba;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        @media (max-width: 768px) {
+            .timer-box {
+                top: 0; left: 0; right: 0;
+                border-radius: 0;
+                text-align: center;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="timer-box" id="timer-display">⏳ 剩餘時間：--:--</div>
+
+<div class="container">
+    <h1>每日多益練習 - 0901單字會考</h1>
+    
+    <div class="user-info-box">
+        <label for="username"><strong>請輸入您的姓名：</strong></label>
+        <input type="text" id="username" placeholder="請填寫姓名" required>
+    </div>
+
+    <div class="reading-test-intro">
+        <h2>TOEIC TEST</h2>
+        <p>In the Reading and Listening test, you will read a variety of texts and answer several different types of comprehension questions. You must mark your answers carefully.</p>
+    </div>
+
+<div class="question-block" id="q1-block">
+    <p><strong>1.</strong> Although Mr. Henderson has over fifteen years of managerial experience, he remains somewhat ------- about overseeing a multinational merger of this scale.</p>
+     <div class="options">
+        <label><input type="radio" name="q1" value="A"> (A) apprehending</label>
+        <label><input type="radio" name="q1" value="B"> (B) apprehensive</label>
+        <label><input type="radio" name="q1" value="C"> (C) apprehension</label>
+        <label><input type="radio" name="q1" value="D"> (D) apprehensively</label>
+    </div>
+    <div class="correct-ans" id="ans-q1">正確答案：((B)) 本題考形容詞選用與搭配。空格前有連繫動詞 "remains" 與程度副詞 "somewhat"，後接介系詞片語 "about..."，此處需要形容詞作為主詞補語。"apprehensive" 意為「擔心的、憂慮的」，常見搭配為 "be/remain apprehensive about..."。(A) 為現在分詞；(C) 為名詞；(D) 為副詞。</div>
+</div>
+
+<div class="question-block" id="q2-block">
+    <p><strong>2.</strong> Passengers are politely requested to ------- from using cellular phones and other electronic devices during the entire duration of the presentation.</p>
+     <div class="options">
+        <label><input type="radio" name="q2" value="A"> (A) refrain</label>
+        <label><input type="radio" name="q2" value="B"> (B) restrict</label>
+        <label><input type="radio" name="q2" value="C"> (C) prohibit</label>
+        <label><input type="radio" name="q2" value="D"> (D) prevent</label>
+    </div>
+    <div class="correct-ans" id="ans-q2">正確答案：((A)) 本題考動詞句型與介系詞搭配。四個選項皆有「限制/禁止/克制」之意，但當主詞為「人」且後面搭配介系詞 "from + -ing" 時，應選不及物動詞 "refrain" (refrain from -ing，意為克制/避免做某事)。其餘選項皆為及物動詞：(B) restrict A to B；(C) prohibit A from -ing；(D) prevent A from -ing。</div>
+</div>
+
+<div class="question-block" id="q3-block">
+    <p><strong>3.</strong> All sub-contractors on the construction site must strictly ------- to the newly established workplace safety protocols.</p>
+     <div class="options">
+        <label><input type="radio" name="q3" value="A"> (A) comply</label>
+        <label><input type="radio" name="q3" value="B"> (B) adhere</label>
+        <label><input type="radio" name="q3" value="C"> (C) observe</label>
+        <label><input type="radio" name="q3" value="D"> (D) follow</label>
+    </div>
+    <div class="correct-ans" id="ans-q3">正確答案：((B)) 本題考同義動詞之介系詞搭配。四個選項皆表示「遵守」，但只有 "adhere" 必須搭配介系詞 "to" (adhere to + rules/protocols)。(A) comply 需搭配 with (comply with)；(C) observe 與 (D) follow 皆為及物動詞，直接接受詞（如 observe/follow the protocols）。</div>
+</div>
+
+<div class="question-block" id="q4-block">
+    <p><strong>4.</strong> Employees who have completed at least two years of continuous service are ------- for the tuition reimbursement program.</p>
+     <div class="options">
+        <label><input type="radio" name="q4" value="A"> (A) qualifying</label>
+        <label><input type="radio" name="q4" value="B"> (B) allowed</label>
+        <label><input type="radio" name="q4" value="C"> (C) eligible</label>
+        <label><input type="radio" name="q4" value="D"> (D) capable</label>
+    </div>
+    <div class="correct-ans" id="ans-q4">正確答案：((C)) 本題考形容詞字義與介系詞搭配。空格後接介系詞 "for"，表達「有資格獲得/參加…」應選 "eligible" (be eligible for + N / be eligible to do)。(A) qualifying 若作形容詞表「合格的」，但動詞 qualify 常用 qualify for 且句型不同；(B) allowed 常接不定詞 (be allowed to do)；(D) capable 搭配 of (be capable of)。</div>
+</div>
+
+<div class="question-block" id="q5-block">
+    <p><strong>5.</strong> Candidates applying for the executive directorship must demonstrate exceptional ------- ability and strategic vision.</p>
+     <div class="options">
+        <label><input type="radio" name="q5" value="A"> (A) manage</label>
+        <label><input type="radio" name="q5" value="B"> (B) manager</label>
+        <label><input type="radio" name="q5" value="C"> (C) management</label>
+        <label><input type="radio" name="q5" value="D"> (D) managerial</label>
+    </div>
+    <div class="correct-ans" id="ans-q5">正確答案：((D)) 本題考修飾名詞的形容詞選用。空格後面為名詞片語 "ability and strategic vision"，需要形容詞來修飾名詞 "ability"。"managerial" 為形容詞「管理的、經營上的」(managerial ability/skills/experience)。(C) management 為名詞，雖可作複合名詞，但 managerial 為修飾 ability 最道地且精準的選詞。</div>
+</div>
+
+<div class="question-block" id="q6-block">
+    <p><strong>6.</strong> The sales representative scheduled a series of face-to-face meetings with ------- clients to present the updated software features.</p>
+     <div class="options">
+        <label><input type="radio" name="q6" value="A"> (A) prospective</label>
+        <label><input type="radio" name="q6" value="B"> (B) perspective</label>
+        <label><input type="radio" name="q6" value="C"> (C) prosperous</label>
+        <label><input type="radio" name="q6" value="D"> (D) standard</label>
+    </div>
+    <div class="correct-ans" id="ans-q6">正確答案：((A)) 本題考形近字與文意辨析。(A) prospective 為形容詞，意為「預期的、未來的、潛在的」，"prospective clients" 指「潛在客戶」；(B) perspective 為名詞「觀點、洞察力」；(C) prosperous 為形容詞「繁榮的、成功的」；(D) standard 為「標準的」。</div>
+</div>
+
+<div class="question-block" id="q7-block">
+    <p><strong>7.</strong> The board approved a comprehensive severance package as ------- for employees affected by the upcoming factory restructuring.</p>
+     <div class="options">
+        <label><input type="radio" name="q7" value="A"> (A) compensation</label>
+        <label><input type="radio" name="q7" value="B"> (B) requirement</label>
+        <label><input type="radio" name="q7" value="C"> (C) allowance</label>
+        <label><input type="radio" name="q7" value="D"> (D) wage</label>
+    </div>
+    <div class="correct-ans" id="ans-q7">正確答案：((A)) 本題考名詞字義與上下文搭配。句意為「董事會批准了一份完整的離職金方案，作為對受重組影響員工的『補償』」。「補償、報償」應選 "compensation" (compensation for)。(B) requirement 為必要條件；(C) allowance 為津貼/補貼；(D) wage 為按時或按週計算的工資。</div>
+</div>
+
+<div class="question-block" id="q8-block">
+    <p><strong>8.</strong> Unauthorized personnel are strictly forbidden from gaining ------- to the server room where sensitive financial records are stored.</p>
+     <div class="options">
+        <label><input type="radio" name="q8" value="A"> (A) approach</label>
+        <label><input type="radio" name="q8" value="B"> (B) access</label>
+        <label><input type="radio" name="q8" value="C"> (C) entry</label>
+        <label><input type="radio" name="q8" value="D"> (D) entrance</label>
+    </div>
+    <div class="correct-ans" id="ans-q8">正確答案：((B)) 本題考名詞慣用搭配片語。"gain access to" 為固定高頻搭配，意為「獲得…的使用權/進入權」；其中 access 作名詞時為不可數名詞。(A) approach 表「處理方法/接近」；(C) entry 與 (D) entrance 雖有入口/進入之意，但不與 "gain ... to" 構成此特定商務慣用語。</div>
+</div>
+
+<div class="question-block" id="q9-block">
+    <p><strong>9.</strong> Prior to the product's global release, quality assurance engineers will ------- test every component for potential hardware vulnerabilities.</p>
+     <div class="options">
+        <label><input type="radio" name="q9" value="A"> (A) drastically</label>
+        <label><input type="radio" name="q9" value="B"> (B) severely</label>
+        <label><input type="radio" name="q9" value="C"> (C) thoroughly</label>
+        <label><input type="radio" name="q9" value="D"> (D) highly</label>
+    </div>
+    <div class="correct-ans" id="ans-q9">正確答案：((C)) 本題考副詞語意與動詞搭配。句意為「在產品全球發佈前，品管工程師將『徹底地』測試每個組件」。「徹底地、完全地」應選 "thoroughly" (thoroughly test/inspect)。(A) drastically 大幅地/急劇地；(B) severely 嚴厲地/嚴重地；(D) highly 非常（常用於修飾形容詞如 highly qualified）。</div>
+</div>
+
+<div class="question-block" id="q10-block">
+    <p><strong>10.</strong> Failure to ------- with the city's environmental protection standards may result in hefty fines and temporary closure of the plant.</p>
+     <div class="options">
+        <label><input type="radio" name="q10" value="A"> (A) adhere</label>
+        <label><input type="radio" name="q10" value="B"> (B) comply</label>
+        <label><input type="radio" name="q10" value="C"> (C) abide</label>
+        <label><input type="radio" name="q10" value="D"> (D) conform</label>
+    </div>
+    <div class="correct-ans" id="ans-q10">正確答案：((B)) 本題考動詞介系詞搭配。(A) adhere 需搭配 to (adhere to)；(B) comply 需搭配 with (comply with)；(C) abide 需搭配 by (abide by)；(D) conform 可接 to 或 with，但與法規/標準搭配時以 "comply with the standards" 為商務英文最標準用法。</div>
+</div>
+
+<div class="question-block" id="q11-block">
+    <p><strong>11.</strong> Demonstrating advanced ------- in at least two foreign languages is a key prerequisite for international diplomatic posts.</p>
+     <div class="options">
+        <label><input type="radio" name="q11" value="A"> (A) proficient</label>
+        <label><input type="radio" name="q11" value="B"> (B) proficiancy</label>
+        <label><input type="radio" name="q11" value="C"> (C) proficiency</label>
+        <label><input type="radio" name="q11" value="D"> (D) proficiently</label>
+    </div>
+    <div class="correct-ans" id="ans-q11">正確答案：((C)) 本題考詞性與名詞選用。空格位於形容詞 "advanced" 之後、介系詞 "in" 之前，需要名詞。"proficiency" 為不可數名詞，意為「精通、熟練度」(proficiency in)。(A) 為形容詞；(B) 為拼字錯誤；(D) 為副詞。</div>
+</div>
+
+<div class="question-block" id="q12-block">
+    <p><strong>12.</strong> Full-time employees who have served the firm for over one year are ------- to six weeks of paid parental leave.</p>
+     <div class="options">
+        <label><input type="radio" name="q12" value="A"> (A) titled</label>
+        <label><input type="radio" name="q12" value="B"> (B) entitled</label>
+        <label><input type="radio" name="q12" value="C"> (C) authorized</label>
+        <label><input type="radio" name="q12" value="D"> (D) delegated</label>
+    </div>
+    <div class="correct-ans" id="ans-q12">正確答案：((B)) 本題考動詞片語與介系詞搭配。"be entitled to + N/infinitive" 意為「有資格/權利獲得…」；(C) authorized 的常見句型為 be authorized to do sth (後接動詞原形，若接名詞需為 authorize sth for sb)；(A) titled 為「命名為」；(D) delegated 為「委派」。</div>
+</div>
+
+<div class="question-block" id="q13-block">
+    <p><strong>13.</strong> The client signed a non-binding letter of intent, meaning they are under no legal ------- to purchase the property.</p>
+     <div class="options">
+        <label><input type="radio" name="q13" value="A"> (A) condition</label>
+        <label><input type="radio" name="q13" value="B"> (B) obligation</label>
+        <label><input type="radio" name="q13" value="C"> (C) restriction</label>
+        <label><input type="radio" name="q13" value="D"> (D) regulation</label>
+    </div>
+    <div class="correct-ans" id="ans-q13">正確答案：((B)) 本題考名詞片語搭配。"under no obligation to do sth" 為多益高頻固定片語，意為「沒有義務/責任去做某事」。(A) condition 條件；(C) restriction 限制；(D) regulation 規定。</div>
+</div>
+
+<div class="question-block" id="q14-block">
+    <p><strong>14.</strong> Due to recent supply chain disruptions, the estimated lead time for manufacturing electronic components has increased -------.</p>
+     <div class="options">
+        <label><input type="radio" name="q14" value="A"> (A) drastically</label>
+        <label><input type="radio" name="q14" value="B"> (B) severely</label>
+        <label><input type="radio" name="q14" value="C"> (C) highly</label>
+        <label><input type="radio" name="q14" value="D"> (D) densely</label>
+    </div>
+    <div class="correct-ans" id="ans-q14">正確答案：((A)) 本題考修飾動詞 increase 的副詞搭配。「急劇地、大幅地」增加應選 "drastically" (drastically increase/alter)。(B) severely 多指受損或懲罰程度嚴重（如 severely damaged/punished）；(C) highly 修飾形容詞（如 highly competitive）；(D) densely 密集地。</div>
+</div>
+
+<div class="question-block" id="q15-block">
+    <p><strong>15.</strong> The newly enacted federal guidelines ------- that all financial institutions implement two-factor authentication for online banking.</p>
+     <div class="options">
+        <label><input type="radio" name="q15" value="A"> (A) mandate</label>
+        <label><input type="radio" name="q15" value="B"> (B) allow</label>
+        <label><input type="radio" name="q15" value="C"> (C) request</label>
+        <label><input type="radio" name="q15" value="D"> (D) permit</label>
+    </div>
+    <div class="correct-ans" id="ans-q15">正確答案：((A)) 本題考動詞句型與法規語意。"mandate that + S + (should) V" 意為「強制規定/命令…」，符合「新頒布的聯邦準則『強制要求』所有金融機構實施…」之句意。(B) allow 與 (D) permit 常用 allow/permit sb to do，較少接 that 子句；(C) request 表示請求，缺乏法令的強制力。</div>
+</div>
+
+<div class="question-block" id="q16-block">
+    <p><strong>16.</strong> With the notable ------- of the regional sales director, all corporate department heads were present at the annual strategy summit.</p>
+     <div class="options">
+        <label><input type="radio" name="q16" value="A"> (A) exclusion</label>
+        <label><input type="radio" name="q16" value="B"> (B) exception</label>
+        <label><input type="radio" name="q16" value="C"> (C) omission</label>
+        <label><input type="radio" name="q16" value="D"> (D) rejection</label>
+    </div>
+    <div class="correct-ans" id="ans-q16">正確答案：((B)) 本題考介系詞片語固定搭配。"with the exception of..." 為固定慣用語，意為「除了…之外 (排除某人/某物)」。(A) exclusion 排除；(C) omission 遺漏；(D) rejection 拒絕，皆無法與 with the... of 構成此特定片語。</div>
+</div>
+
+<div class="question-block" id="q17-block">
+    <p><strong>17.</strong> Representatives from the Department of Labor arrived unannounced to conduct a routine safety ------- of the manufacturing facility.</p>
+     <div class="options">
+        <label><input type="radio" name="q17" value="A"> (A) inspect</label>
+        <label><input type="radio" name="q17" value="B"> (B) inspector</label>
+        <label><input type="radio" name="q17" value="C"> (C) inspection</label>
+        <label><input type="radio" name="q17" value="D"> (D) inspectable</label>
+    </div>
+    <div class="correct-ans" id="ans-q17">正確答案：((C)) 本題考名詞選用與動詞搭配。"conduct an inspection" 表示「進行檢查/檢驗」。(B) inspector 是「檢查員（人）」，在此句意中係對設施進行「檢查（抽象事件）」，故選 (C) inspection。(A) 為動詞；(D) 為形容詞。</div>
+</div>
+
+<div class="question-block" id="q18-block">
+    <p><strong>18.</strong> Members of the executive committee were deeply ------- by the detailed financial forecast presented by the junior analyst.</p>
+     <div class="options">
+        <label><input type="radio" name="q18" value="A"> (A) impressive</label>
+        <label><input type="radio" name="q18" value="B"> (B) impressed</label>
+        <label><input type="radio" name="q18" value="C"> (C) impression</label>
+        <label><input type="radio" name="q18" value="D"> (D) impressively</label>
+    </div>
+    <div class="correct-ans" id="ans-q18">正確答案：((B)) 本題考分詞形容詞（主動與被動）。主詞為 "Members of the executive committee"（人），表達「人對…感到印象深刻」應選被動分詞形容詞 "impressed" (be impressed by/with)。(A) impressive 意為「令人印象深刻的」，通常修飾事物（如 an impressive achievement）。</div>
+</div>
+
+<div class="question-block" id="q19-block">
+    <p><strong>19.</strong> Strict company policies clearly ------- employees from sharing confidential internal documents with third-party vendors.</p>
+     <div class="options">
+        <label><input type="radio" name="q19" value="A"> (A) forbid</label>
+        <label><input type="radio" name="q19" value="B"> (B) prohibit</label>
+        <label><input type="radio" name="q19" value="C"> (C) refrain</label>
+        <label><input type="radio" name="q19" value="D"> (D) prevent</label>
+    </div>
+    <div class="correct-ans" id="ans-q19">正確答案：((B)) 本題考動詞句型與語意區分。(B) prohibit 句型為 "prohibit A from -ing" (禁止某人做某事)；(A) forbid 句型為 "forbid A to do sth"（不可接 from -ing）；(C) refrain 為不及物動詞 (refrain from -ing，主詞需為人)；(D) prevent 雖然也有 prevent A from -ing，但語意為「防止/阻礙」，而「公司政策明確禁止」首選 (B) prohibit。</div>
+</div>
+
+<div class="question-block" id="q20-block">
+    <p><strong>20.</strong> The chief operating officer stressed the importance of following standard administrative ------- when submitting expense reports.</p>
+     <div class="options">
+        <label><input type="radio" name="q20" value="A"> (A) procedures</label>
+        <label><input type="radio" name="q20" value="B"> (B) processings</label>
+        <label><input type="radio" name="q20" value="C"> (C) proceedings</label>
+        <label><input type="radio" name="q20" value="D"> (D) progressions</label>
+    </div>
+    <div class="correct-ans" id="ans-q20">正確答案：((A)) 本題考同源名詞字義辨析。"standard administrative procedures"（標準行政程序/步驟）為商務領域固定用語。(B) processing 為「加工、處理（不可數名詞）」；(C) proceedings 為「訴訟程序、會議記錄」；(D) progression 為「進展、演變」。</div>
+</div>
+
+<div class="question-block" id="q21-block">
+    <p><strong>21.</strong> After evaluating dozens of qualified applicants, the hiring committee identified Ms. Vance as the top ------- for the directorship.</p>
+     <div class="options">
+        <label><input type="radio" name="q21" value="A"> (A) candidate</label>
+        <label><input type="radio" name="q21" value="B"> (B) occupant</label>
+        <label><input type="radio" name="q21" value="C"> (C) resident</label>
+        <label><input type="radio" name="q21" value="D"> (D) employer</label>
+    </div>
+    <div class="correct-ans" id="ans-q21">正確答案：((A)) 本題考名詞字義辨析。(A) candidate 意為「應徵者、候選人」，"top candidate" 指「最佳人選」；(B) occupant 為「（房屋/職位的）佔有者、居住者」；(C) resident 為「居民」；(D) employer 為「雇主」。</div>
+</div>
+
+<div class="question-block" id="q22-block">
+    <p><strong>22.</strong> Applicants are requested to submit three professional ------- who can vouch for their work ethic and technical competencies.</p>
+     <div class="options">
+        <label><input type="radio" name="q22" value="A"> (A) recommendations</label>
+        <label><input type="radio" name="q22" value="B"> (B) references</label>
+        <label><input type="radio" name="q22" value="C"> (C) credentials</label>
+        <label><input type="radio" name="q22" value="D"> (D) referrals</label>
+    </div>
+    <div class="correct-ans" id="ans-q22">正確答案：((B)) 本題考名詞指「人」或指「物」之區分。句末有關係代詞 "who can vouch..."，表示前面名詞必須指「人」。指「推薦人（提供參考資訊的人）」時應用 "references"。(A) recommendation 指推薦信（物）；(C) credential 資格證明；(D) referral 轉介/推薦案。</div>
+</div>
+
+<div class="question-block" id="q23-block">
+    <p><strong>23.</strong> Including seasonal workers hired for the holidays, the firm currently has over five hundred individuals listed on its -------.</p>
+     <div class="options">
+        <label><input type="radio" name="q23" value="A"> (A) wages</label>
+        <label><input type="radio" name="q23" value="B"> (B) salary</label>
+        <label><input type="radio" name="q23" value="C"> (C) payroll</label>
+        <label><input type="radio" name="q23" value="D"> (D) compensation</label>
+    </div>
+    <div class="correct-ans" id="ans-q23">正確答案：((C)) 本題考介系詞片語固定搭配。"on the payroll"（在薪水帳冊上、受僱於該公司）為多益極高頻之介系詞片語。wages, salary, compensation 皆不可與 "on its..." 搭配表達「在公司發薪名單上」之意。</div>
+</div>
+
+<div class="question-block" id="q24-block">
+    <p><strong>24.</strong> Obtaining an advanced project management ------- can significantly enhance a candidate's career prospects in the tech sector.</p>
+     <div class="options">
+        <label><input type="radio" name="q24" value="A"> (A) certificate</label>
+        <label><input type="radio" name="q24" value="B"> (B) certified</label>
+        <label><input type="radio" name="q24" value="C"> (C) certification</label>
+        <label><input type="radio" name="q24" value="D"> (D) certify</label>
+    </div>
+    <div class="correct-ans" id="ans-q24">正確答案：((C)) 本題考同源名詞抽象概念與具體名稱辨析。"professional/project management certification" 指取得「（資格）認證/檢定資格（抽象資格體系與過程）」；而 certificate 特指實體的「證書/執照」。此處強調管理領域的專業認證資格，故選 (C) certification。</div>
+</div>
+
+<div class="question-block" id="q25-block">
+    <p><strong>25.</strong> To prevent unauthorized access, security protocols ------- entry to the data center to authorized IT personnel only.</p>
+     <div class="options">
+        <label><input type="radio" name="q25" value="A"> (A) refrain</label>
+        <label><input type="radio" name="q25" value="B"> (B) restrict</label>
+        <label><input type="radio" name="q25" value="C"> (C) abolish</label>
+        <label><input type="radio" name="q25" value="D"> (D) ban</label>
+    </div>
+    <div class="correct-ans" id="ans-q25">正確答案：((B)) 本題考動詞句型與介系詞搭配。"restrict A to B" 意為「將 A 限制在 B 的範圍內」。句意為「將進入資料中心的權限僅限制於授權的 IT 人員」。(A) refrain 不及物動詞；(C) abolish 廢除；(D) ban 句型為 ban A from B。</div>
+</div>
+
+<div class="question-block" id="q26-block">
+    <p><strong>26.</strong> The board of directors voted unanimously to ------- the mandatory weekend overtime policy after observing widespread employee fatigue.</p>
+     <div class="options">
+        <label><input type="radio" name="q26" value="A"> (A) abolish</label>
+        <label><input type="radio" name="q26" value="B"> (B) enforce</label>
+        <label><input type="radio" name="q26" value="C"> (C) prohibit</label>
+        <label><input type="radio" name="q26" value="D"> (D) execute</label>
+    </div>
+    <div class="correct-ans" id="ans-q26">正確答案：((A)) 本題考動詞語意搭配。(A) abolish 意為「廢除（制度、法律、政策等）」；(B) enforce 實施/執行；(C) prohibit 禁止；(D) execute 執行。廢除不合時宜的加班政策應選 abolish。</div>
+</div>
+
+<div class="question-block" id="q27-block">
+    <p><strong>27.</strong> Regulatory agencies possess the legal authority to ------- environmental regulations and issue fines to non-compliant corporations.</p>
+     <div class="options">
+        <label><input type="radio" name="q27" value="A"> (A) obey</label>
+        <label><input type="radio" name="q27" value="B"> (B) comply</label>
+        <label><input type="radio" name="q27" value="C"> (C) enforce</label>
+        <label><input type="radio" name="q27" value="D"> (D) enact</label>
+    </div>
+    <div class="correct-ans" id="ans-q27">正確答案：((C)) 本題考動詞字義與主詞邏輯。句意為「監管機構擁有法律授權來『執行』環保法規」。「執行（法規、條例）」應選 "enforce" (enforce regulations/laws)。(A) obey 與 (B) comply 的主詞通常為受規範的公司或個人；(D) enact 是「制定（法律）」。</div>
+</div>
+
+<div class="question-block" id="q28-block">
+    <p><strong>28.</strong> Dr. Arisawa has been closely ------- with the institute's renewable energy research initiative for nearly a decade.</p>
+     <div class="options">
+        <label><input type="radio" name="q28" value="A"> (A) associated</label>
+        <label><input type="radio" name="q28" value="B"> (B) associate</label>
+        <label><input type="radio" name="q28" value="C"> (C) association</label>
+        <label><input type="radio" name="q28" value="D"> (D) associating</label>
+    </div>
+    <div class="correct-ans" id="ans-q28">正確答案：((A)) 本題考動詞被動慣用法。"be associated with..." 意為「與…有關聯/參與…」。(B) 為動詞原形/名詞；(C) 為名詞；(D) 為現在分詞。</div>
+</div>
+
+<div class="question-block" id="q29-block">
+    <p><strong>29.</strong> The sleek minimalist design of the new smartphone is expected to ------- strongly to tech-savvy young consumers.</p>
+     <div class="options">
+        <label><input type="radio" name="q29" value="A"> (A) attract</label>
+        <label><input type="radio" name="q29" value="B"> (B) appeal</label>
+        <label><input type="radio" name="q29" value="C"> (C) entice</label>
+        <label><input type="radio" name="q29" value="D"> (D) persuade</label>
+    </div>
+    <div class="correct-ans" id="ans-q29">正確答案：((B)) 本題考動詞介系詞搭配。(B) "appeal to sb" 意為「對某人有吸引力/引起興趣」。(A) attract, (C) entice, (D) persuade 皆為及物動詞，直接接受詞（如 attract consumers），不可加介系詞 to。</div>
+</div>
+
+<div class="question-block" id="q30-block">
+    <p><strong>30.</strong> Before launching the rebranding campaign, the marketing director worked in close ------- with a renowned brand strategist.</p>
+     <div class="options">
+        <label><input type="radio" name="q30" value="A"> (A) consult</label>
+        <label><input type="radio" name="q30" value="B"> (B) consultant</label>
+        <label><input type="radio" name="q30" value="C"> (C) consultation</label>
+        <label><input type="radio" name="q30" value="D"> (D) consultative</label>
+    </div>
+    <div class="correct-ans" id="ans-q30">正確答案：((C)) 本題考介系詞片語與名詞選用。"in consultation with sb" 為固定搭配，意為「與某人商討/諮詢」。(B) consultant 為「顧問（人）」，不能接在 in close... with 之中表達商討過程；(A) 為動詞；(D) 為形容詞。</div>
+</div>
+
+<div class="question-block" id="q31-block">
+    <p><strong>31.</strong> The executive search firm was retained to ------- top-tier talent for the newly created chief technology officer position.</p>
+     <div class="options">
+        <label><input type="radio" name="q31" value="A"> (A) recruit</label>
+        <label><input type="radio" name="q31" value="B"> (B) apply</label>
+        <label><input type="radio" name="q31" value="C"> (C) qualify</label>
+        <label><input type="radio" name="q31" value="D"> (D) enroll</label>
+    </div>
+    <div class="correct-ans" id="ans-q31">正確答案：((A)) 本題考動詞字義與搭配。"recruit talent/employees" 表示「招募人才/員工」。(B) apply 用法為 apply for 職位；(C) qualify 使合格；(D) enroll 註冊/報名（課程）。</div>
+</div>
+
+<div class="question-block" id="q32-block">
+    <p><strong>32.</strong> Fluency in Mandarin is a mandatory ------- for all sales representatives assigned to the East Asian regional offices.</p>
+     <div class="options">
+        <label><input type="radio" name="q32" value="A"> (A) require</label>
+        <label><input type="radio" name="q32" value="B"> (B) required</label>
+        <label><input type="radio" name="q32" value="C"> (C) requirement</label>
+        <label><input type="radio" name="q32" value="D"> (D) requisite</label>
+    </div>
+    <div class="correct-ans" id="ans-q32">正確答案：((C)) 本題考名詞選用。空格前有形容詞 "mandatory"（強制的、必須的），後需要名詞。"requirement for..." 意為「…的必要條件/要求」。(A) 為動詞；(B) 為過去分詞；(D) 多作形容詞。</div>
+</div>
+
+<div class="question-block" id="q33-block">
+    <p><strong>33.</strong> The event coordinator made all necessary ------- for the international conference, including venue booking and catering.</p>
+     <div class="options">
+        <label><input type="radio" name="q33" value="A"> (A) arrangements</label>
+        <label><input type="radio" name="q33" value="B"> (B) preparing</label>
+        <label><input type="radio" name="q33" value="C"> (C) agreements</label>
+        <label><input type="radio" name="q33" value="D"> (D) conditions</label>
+    </div>
+    <div class="correct-ans" id="ans-q33">正確答案：((A)) 本題考動詞與名詞慣用搭配。"make arrangements for..." 意為「為…做出安排/準備」。(B) preparing 詞性不合；(C) agreement 是協議；(D) condition 是條件。</div>
+</div>
+
+<div class="question-block" id="q34-block">
+    <p><strong>34.</strong> Shareholder representatives expressed grave ------- about the company's declining operating margins during the quarterly meeting.</p>
+     <div class="options">
+        <label><input type="radio" name="q34" value="A"> (A) anxious</label>
+        <label><input type="radio" name="q34" value="B"> (B) concern</label>
+        <label><input type="radio" name="q34" value="C"> (C) problematic</label>
+        <label><input type="radio" name="q34" value="D"> (D) nervous</label>
+    </div>
+    <div class="correct-ans" id="ans-q34">正確答案：((B)) 本題考名詞選用與介系詞搭配。動詞 "expressed" 後面需要名詞作為受詞，且搭配介系詞 "about/over"。「表達擔憂」應選 "express concern about"。(A) anxious, (C) problematic, (D) nervous 皆為形容詞。</div>
+</div>
+
+<div class="question-block" id="q35-block">
+    <p><strong>35.</strong> Employees attending the client gala are expected to wear formal business ------- appropriate for an evening event.</p>
+     <div class="options">
+        <label><input type="radio" name="q35" value="A"> (A) attire</label>
+        <label><input type="radio" name="q35" value="B"> (B) clothes</label>
+        <label><input type="radio" name="q35" value="C"> (C) garments</label>
+        <label><input type="radio" name="q35" value="D"> (D) outfits</label>
+    </div>
+    <div class="correct-ans" id="ans-q35">正確答案：((A)) 本題考名詞可數性與商務用語特質。"business attire" 為不可數名詞，專指正式商務服裝，前面無冠詞 a/an。(B) clothes, (C) garments, (D) outfits 皆為可數名詞複數，在此句中無冠詞修飾時，最符合商務正式語境的選詞為 (A) attire。</div>
+</div>
+
+<div class="question-block" id="q36-block">
+    <p><strong>36.</strong> The newly enacted tax regulations will come into ------- on the first day of the next fiscal quarter.</p>
+     <div class="options">
+        <label><input type="radio" name="q36" value="A"> (A) affect</label>
+        <label><input type="radio" name="q36" value="B"> (B) effective</label>
+        <label><input type="radio" name="q36" value="C"> (C) effect</label>
+        <label><input type="radio" name="q36" value="D"> (D) effectively</label>
+    </div>
+    <div class="correct-ans" id="ans-q36">正確答案：((C)) 本題考介系詞片語固定搭配。"come into effect" 或 "take effect" 表示「（法律、規定）生效」。(A) affect 是動詞；(B) effective 是形容詞；(D) effectively 是副詞。</div>
+</div>
+
+<div class="question-block" id="q37-block">
+    <p><strong>37.</strong> Any staff member found guilty of violating confidentiality agreements will be ------- disciplined by management.</p>
+     <div class="options">
+        <label><input type="radio" name="q37" value="A"> (A) severely</label>
+        <label><input type="radio" name="q37" value="B"> (B) drastically</label>
+        <label><input type="radio" name="q37" value="C"> (C) highly</label>
+        <label><input type="radio" name="q37" value="D"> (D) thoroughly</label>
+    </div>
+    <div class="correct-ans" id="ans-q37">正確答案：((A)) 本題考修飾動詞 discipline/punish 的副詞選用。「嚴厲地懲戒/處分」應選 "severely" (severely disciplined/punished)。(B) drastically 多修飾數據/數量的急劇變化 (drastically reduced/increased)；(C) highly 修飾讚美或資格 (highly praised/qualified)；(D) thoroughly 表示徹底地。</div>
+</div>
+
+<div class="question-block" id="q38-block">
+    <p><strong>38.</strong> Due to the system's frequent glitches, the technical support desk received a ------- stream of complaints from frustrated users.</p>
+     <div class="options">
+        <label><input type="radio" name="q38" value="A"> (A) constant</label>
+        <label><input type="radio" name="q38" value="B"> (B) constantly</label>
+        <label><input type="radio" name="q38" value="C"> (C) constancy</label>
+        <label><input type="radio" name="q38" value="D"> (D) constantness</label>
+    </div>
+    <div class="correct-ans" id="ans-q38">正確答案：((A)) 本題考形容詞修飾名詞。空格後修飾名詞片語 "stream of complaints"，需要形容詞。"a constant stream of..." 意為「源源不絕的、持續不斷的…」。(B) 為副詞；(C) 與 (D) 為名詞。</div>
+</div>
+
+<div class="question-block" id="q39-block">
+    <p><strong>39.</strong> The government introduced new ------- aimed at curbing aggressive corporate tax avoidance practices.</p>
+     <div class="options">
+        <label><input type="radio" name="q39" value="A"> (A) legislate</label>
+        <label><input type="radio" name="q39" value="B"> (B) legislator</label>
+        <label><input type="radio" name="q39" value="C"> (C) legislation</label>
+        <label><input type="radio" name="q39" value="D"> (D) legislative</label>
+    </div>
+    <div class="correct-ans" id="ans-q39">正確答案：((C)) 本題考名詞選用。句意為「政府提出了新的『立法/法律法規』」。"legislation" 為不可數名詞，意為「立法、法規」。(A) 為動詞；(B) 為「立法議員（人）」；(D) 為形容詞。</div>
+</div>
+
+<div class="question-block" id="q40-block">
+    <p><strong>40.</strong> Regular exercise and adequate sleep should become a daily ------- for employees seeking to maintain peak operational performance.</p>
+     <div class="options">
+        <label><input type="radio" name="q40" value="A"> (A) habit</label>
+        <label><input type="radio" name="q40" value="B"> (B) convention</label>
+        <label><input type="radio" name="q40" value="C"> (C) tradition</label>
+        <label><input type="radio" name="q40" value="D"> (D) custom</label>
+    </div>
+    <div class="correct-ans" id="ans-q40">正確答案：((A)) 本題考近義名詞辨析。(A) habit 指「個人的生活習慣/習性」(daily habit)；(B) convention 指「社會/公司慣例、常規」；(C) tradition 指「文化傳統」；(D) custom 指「社會風俗/習俗」。此處指個人保持健康的習慣，應選 (A) habit。</div>
+</div>
+
+    <button onclick="checkAnswers()">送出並對答案</button>
+    <div id="score-display" class="result"></div>
+</div>
+
+<script>
+    // 🌟 新增：關閉瀏覽器預設的「重新整理後保留捲動位置」功能
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+
+    const correctAnswers = {
+        "q1": "(B)",
+        "q2": "(A)",
+        "q3": "(B)",
+        "q4": "(C)",
+        "q5": "(D)",
+        "q6": "(A)",
+        "q7": "(A)",
+        "q8": "(B)",
+        "q9": "(C)",
+        "q10": "(B)",
+        "q11": "(C)",
+        "q12": "(B)",
+        "q13": "(B)",
+        "q14": "(A)",
+        "q15": "(A)",
+        "q16": "(B)",
+        "q17": "(C)",
+        "q18": "(B)",
+        "q19": "(B)",
+        "q20": "(A)",
+        "q21": "(A)",
+        "q22": "(B)",
+        "q23": "(C)",
+        "q24": "(C)",
+        "q25": "(B)",
+        "q26": "(A)",
+        "q27": "(C)",
+        "q28": "(A)",
+        "q29": "(B)",
+        "q30": "(C)",
+        "q31": "(A)",
+        "q32": "(C)",
+        "q33": "(A)",
+        "q34": "(B)",
+        "q35": "(A)",
+        "q36": "(C)",
+        "q37": "(A)",
+        "q38": "(A)",
+        "q39": "(C)",
+        "q40": "(A)"
+    };
+
+    const EXAM_TIME_MINUTES = 25; // 預設 120 分鐘
+    let timeInSeconds = EXAM_TIME_MINUTES * 60; 
+    let timerInterval = null;
+
+    function startTimer() {
+        const timerDisplay = document.getElementById("timer-display");
+        
+        timerInterval = setInterval(() => {
+            if (timeInSeconds <= 0) {
+                clearInterval(timerInterval);
+                timerDisplay.innerText = "⏳ 時間到！";
+                timerDisplay.style.backgroundColor = "#f8d7da";
+                timerDisplay.style.color = "#721c24";
+                timerDisplay.style.borderColor = "#f5c6cb";
+                
+                let nameInput = document.getElementById("username");
+                let nameValue = nameInput.value.trim();
+                
+                if (!nameValue) {
+                    while (!nameValue) {
+                        let input = prompt("⏳ 測驗時間已到！\n請輸入您的姓名以完成交卷動作：");
+                        if (input) {
+                            nameValue = input.trim();
+                        }
+                    }
+                    nameInput.value = nameValue;
+                    alert("姓名輸入完成，將自動為您交卷！");
+                } else {
+                    alert("測驗時間已到！將自動為您交卷。");
+                }
+                
+                checkAnswers(true); // 時間到自動觸發交卷
+                return;
+            }
+            
+            let minutes = Math.floor(timeInSeconds / 60);
+            let seconds = timeInSeconds % 60;
+            
+            let minStr = minutes < 10 ? "0" + minutes : minutes;
+            let secStr = seconds < 10 ? "0" + seconds : seconds;
+            
+            timerDisplay.innerText = `⏳ 剩餘時間：${minStr}:${secStr}`;
+            timeInSeconds--;
+        }, 1000);
+    }
+
+    window.onload = function() {
+        // 🌟 新增：網頁載入時（包含重測刷新），確保停留在最上方
+        window.scrollTo(0, 0);
+
+        let savedData = localStorage.getItem("toeic_record_0901單字會考");
+        if (savedData) {
+            let userAnswers = JSON.parse(savedData);
+            document.getElementById("username").value = userAnswers.name;
+            document.getElementById("username").disabled = true;
+            
+            document.getElementById("timer-display").style.display = "none";
+            restoreAnswers(userAnswers);
+        } else {
+            startTimer();
+        }
+    };
+
+    function checkAnswers(autoSubmit = false) {
+        let nameValue = document.getElementById("username").value.trim();
+        
+        if (!nameValue && !autoSubmit) {
+            alert("請先輸入您的姓名再送出答案！");
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            return;
+        }
+
+        if (localStorage.getItem("toeic_record_0901單字會考")) {
+            alert("您已經完成過這份測驗囉！目前顯示的是您過去的作答紀錄。");
+            return;
+        }
+
+        clearInterval(timerInterval);
+        document.getElementById("timer-display").innerText = "🛑 測驗已結束";
+        document.getElementById("timer-display").style.backgroundColor = "#d4edda";
+        document.getElementById("timer-display").style.color = "#155724";
+
+        let score = 0;
+        let total = Object.keys(correctAnswers).length;
+
+        let userAnswers = {
+            name: nameValue, 
+            testName: "0901單字會考" 
+        };
+        
+        for (let q in correctAnswers) {
+            userAnswers[q] = "未作答";
+            let selected = document.querySelector('input[name="' + q + '"]:checked');
+            let ansDiv = document.getElementById("ans-" + q);
+            ansDiv.style.display = "block";
+
+            if (selected) {
+                userAnswers[q] = selected.value;
+                if (selected.value === correctAnswers[q]) {
+                    score++;
+                    ansDiv.style.color = "green";
+                } else {
+                    ansDiv.style.color = "red";
+                }
+            } else {
+                ansDiv.style.color = "red";
+            }
+            
+            let radios = document.querySelectorAll('input[name="' + q + '"]');
+            radios.forEach(r => r.disabled = true);
+        }
+        
+        userAnswers.score = score;
+        document.getElementById("score-display").innerText = `你的分數：${score} / ${total}（正在上傳後台...）`;
+
+        localStorage.setItem("toeic_record_0901單字會考", JSON.stringify(userAnswers));
+
+        const gasUrl = "https://script.google.com/macros/s/AKfycbykMQVcQAGTj2eQYsnx0acR_UKMIuCm4VQJIjm25ML_YXxuZqV-aNZ_-H6rXg6kVh7uSA/exec";
+
+        fetch(gasUrl, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "text/plain" },
+            body: JSON.stringify(userAnswers)
+        })
+        .then(() => {
+            document.getElementById("score-display").innerText = `你的分數：${score} / ${total}（作答紀錄已成功同步至後台！）`;
+            document.querySelector("button").style.display = "none";
+            // 🌟 已經將「交卷後自動回到最上方」的程式碼移除了
+        })
+        .catch(error => {
+            console.error("上傳失敗:", error);
+            document.getElementById("score-display").innerText = `你的分數：${score} / ${total}（紀錄上傳失敗，但已完成對答案）`;
+        });
+    }
+
+    function restoreAnswers(userAnswers) {
+        let score = 0;
+        let total = Object.keys(correctAnswers).length;
+
+        for (let q in correctAnswers) {
+            let userOpt = userAnswers[q];
+            let ansDiv = document.getElementById("ans-" + q);
+            ansDiv.style.display = "block";
+
+            let radios = document.querySelectorAll('input[name="' + q + '"]');
+            radios.forEach(r => {
+                r.disabled = true; 
+                if (r.value === userOpt) r.checked = true;
+            });
+
+            if (userOpt === correctAnswers[q]) {
+                score++;
+                ansDiv.style.color = "green";
+            } else {
+                ansDiv.style.color = "red";
+            }
+        }
+        document.getElementById("score-display").innerText = `歷史作答紀錄：${score} / ${total} 分`;
+        document.querySelector("button").style.display = "none";
+
+        let clearBtn = document.createElement("button");
+        clearBtn.innerText = "重新測驗 (清除本機紀錄)";
+        clearBtn.style.backgroundColor = "#e74c3c";
+        clearBtn.style.marginTop = "10px";
+        clearBtn.onclick = clearRecord;
+        document.getElementById("score-display").appendChild(clearBtn);
+    }
+
+    function clearRecord() {
+        if(confirm("確定要清除先前的作答紀錄，重新開始測驗嗎？（後台已儲存的舊成績不會消失）")) {
+            localStorage.removeItem("toeic_record_0901單字會考");
+            // 🌟 新增：重新載入前，將畫面移回頂部，搭配 scrollRestoration = 'manual' 確保重測時從頭開始
+            window.scrollTo(0, 0);
+            location.reload();
+        }
+    }
+</script>
+</body>
+</html>
